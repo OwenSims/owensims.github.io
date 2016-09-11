@@ -1,0 +1,2048 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>I'm Owen Sims | My Facebook Network | Node Analysis</title>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #414141;
+}
+
+.content {
+	font-size: 12px;
+	color: #EEEEEE;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabletop {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #EEEEEE;
+}
+table#tablesorter {
+	font-family:Verdana, Geneva, sans-serif;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	width: 750px;
+	text-align: left;
+}
+table#tablesorter thead tr th, table#tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+}
+table#tablesorter thead tr .header {
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table#tablesorter tbody td {
+	color: #EEEEEE;
+	padding: 4px;
+	background-color: #414141;
+	vertical-align: top;
+}
+table#tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table#tablesorter thead tr .headerSortUp {
+	background-image: url(asc.gif);
+}
+table#tablesorter thead tr .headerSortDown {
+	background-image: url(desc.gif);
+}
+table#tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #D13024;
+}
+a {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:active {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+</style>
+
+<script type="text/javascript" src="facebook/jquery-latest.js"></script> 
+<script type="text/javascript" src="facebook/jquery.tablesorter.js"></script> 
+
+
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="8%" height="55">&nbsp;</td>
+    <td width="92%"><a href="index.html"><img src="imgs/imowensims.png" width="230" height="32" alt="owen" /></a></td>
+  </tr>
+  <tr>
+    <td height="30" colspan="2" align="center"><p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <table width="750" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center" class="content">Click on a heading to sort nodes (people) in ascending / decending order depending on the criteria.</td>
+        </tr>
+      </table>
+      <p><script>
+    $(document).ready(function() 
+    { 
+        $("#tablesorter").tablesorter( {sortList: [[0,0]]} ); 
+    } 
+); 
+        </script>
+      </p>
+      <p>&nbsp;</p>
+      <table id="tablesorter" width="750px" border="0" cellspacing="0" cellpadding="0">
+  <thead><tr class="th.header"><th width="184" height="25" bgcolor="#FF1268" title="Field #1">Name</th>
+<th width="170" bgcolor="#FF1268" title="Field #2">Closeness</th>
+<th width="198" bgcolor="#FF1268" title="Field #3">Betweenness</th>
+<th width="110" bgcolor="#FF1268" title="Field #4">Modularity</th>
+<th width="88" bgcolor="#FF1268" title="Field #5">Degree</th>
+</tr></thead>
+<tbody>
+  <tr><td height="22" align="left" class="content">Michael Gilmer</td>
+<td height="22" align="center" class="content">1.77</td>
+<td height="22" align="center" class="content">1111.79</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">112</td>
+</tr>
+<tr><td height="22" align="left" class="content">Rory Charles Eves</td>
+<td height="22" align="center" class="content">1.74</td>
+<td height="22" align="center" class="content">615.51</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">111</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ryan Diver</td>
+<td height="22" align="center" class="content">1.81</td>
+<td height="22" align="center" class="content">1429.99</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">103</td>
+</tr>
+<tr><td height="22" align="left" class="content">Garth McDonald</td>
+<td height="22" align="center" class="content">1.79</td>
+<td height="22" align="center" class="content">373.15</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">101</td>
+</tr>
+<tr><td height="22" align="left" class="content">Emily Iona Morrow</td>
+<td height="22" align="center" class="content">1.81</td>
+<td height="22" align="center" class="content">382.06</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">98</td>
+</tr>
+<tr><td height="22" align="left" class="content">Sam Brown</td>
+<td height="22" align="center" class="content">1.81</td>
+<td height="22" align="center" class="content">911.27</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">97</td>
+</tr>
+<tr><td height="22" align="left" class="content">Sophie Marie</td>
+<td height="22" align="center" class="content">1.83</td>
+<td height="22" align="center" class="content">296.48</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">96</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jamie Campbell</td>
+<td height="22" align="center" class="content">1.87</td>
+<td height="22" align="center" class="content">583.01</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">94</td>
+</tr>
+<tr><td height="22" align="left" class="content">Simon James Hobson</td>
+<td height="22" align="center" class="content">1.85</td>
+<td height="22" align="center" class="content">250.98</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">93</td>
+</tr>
+<tr><td height="22" align="left" class="content">Christopher Michael Adams</td>
+<td height="22" align="center" class="content">1.88</td>
+<td height="22" align="center" class="content">268.26</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">93</td>
+</tr>
+<tr><td height="22" align="left" class="content">Pearson John Noble Morris</td>
+<td height="22" align="center" class="content">1.85</td>
+<td height="22" align="center" class="content">207.61</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">91</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jonny Bradley</td>
+<td height="22" align="center" class="content">1.84</td>
+<td height="22" align="center" class="content">507.93</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">88</td>
+</tr>
+<tr><td height="22" align="left" class="content">Craig Billington</td>
+<td height="22" align="center" class="content">1.88</td>
+<td height="22" align="center" class="content">220.85</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">88</td>
+</tr>
+<tr><td height="22" align="left" class="content">Aisling Burke</td>
+<td height="22" align="center" class="content">1.85</td>
+<td height="22" align="center" class="content">1274.17</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">88</td>
+</tr>
+<tr><td height="22" align="left" class="content">Kyle Wimpress</td>
+<td height="22" align="center" class="content">1.83</td>
+<td height="22" align="center" class="content">1779</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">87</td>
+</tr>
+<tr><td height="22" align="left" class="content">Matthew Gaston</td>
+<td height="22" align="center" class="content">1.91</td>
+<td height="22" align="center" class="content">323.4</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">87</td>
+</tr>
+<tr><td height="22" align="left" class="content">Darren Hill</td>
+<td height="22" align="center" class="content">1.87</td>
+<td height="22" align="center" class="content">213.73</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">87</td>
+</tr>
+<tr><td height="22" align="left" class="content">Emma Ringland</td>
+<td height="22" align="center" class="content">1.88</td>
+<td height="22" align="center" class="content">140.73</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">86</td>
+</tr>
+<tr><td height="22" align="left" class="content">Richard Kerrigan</td>
+<td height="22" align="center" class="content">1.88</td>
+<td height="22" align="center" class="content">902.38</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">86</td>
+</tr>
+<tr><td height="22" align="left" class="content">Stephen Hunter</td>
+<td height="22" align="center" class="content">1.88</td>
+<td height="22" align="center" class="content">152.31</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">85</td>
+</tr>
+<tr><td height="22" align="left" class="content">Matt Campbell</td>
+<td height="22" align="center" class="content">1.83</td>
+<td height="22" align="center" class="content">1802.36</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">85</td>
+</tr>
+<tr><td height="22" align="left" class="content">Andrew Gilmer</td>
+<td height="22" align="center" class="content">1.89</td>
+<td height="22" align="center" class="content">211.82</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">83</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jane Alexander</td>
+<td height="22" align="center" class="content">1.90</td>
+<td height="22" align="center" class="content">184.83</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">83</td>
+</tr>
+<tr><td height="22" align="left" class="content">Michael McNeill</td>
+<td height="22" align="center" class="content">1.89</td>
+<td height="22" align="center" class="content">1271.94</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">83</td>
+</tr>
+<tr><td height="22" align="left" class="content">Andrew Davison</td>
+<td height="22" align="center" class="content">1.93</td>
+<td height="22" align="center" class="content">94.16</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">82</td>
+</tr>
+<tr><td height="22" align="left" class="content">Andrew Crone</td>
+<td height="22" align="center" class="content">1.96</td>
+<td height="22" align="center" class="content">451.3</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">82</td>
+</tr>
+<tr><td height="22" align="left" class="content">Sarah Elizabeth</td>
+<td height="22" align="center" class="content">1.91</td>
+<td height="22" align="center" class="content">479.72</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">82</td>
+</tr>
+<tr><td height="22" align="left" class="content">Matty McErlane</td>
+<td height="22" align="center" class="content">1.92</td>
+<td height="22" align="center" class="content">173.04</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">81</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ben Morrison</td>
+<td height="22" align="center" class="content">1.93</td>
+<td height="22" align="center" class="content">129.23</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">81</td>
+</tr>
+<tr><td height="22" align="left" class="content">Richard Beck</td>
+<td height="22" align="center" class="content">1.92</td>
+<td height="22" align="center" class="content">94.86</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">81</td>
+</tr>
+<tr><td height="22" align="left" class="content">Johnny Hewitt</td>
+<td height="22" align="center" class="content">1.93</td>
+<td height="22" align="center" class="content">86.72</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">81</td>
+</tr>
+<tr><td height="22" align="left" class="content">Becky Evans</td>
+<td height="22" align="center" class="content">1.88</td>
+<td height="22" align="center" class="content">1359.77</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">81</td>
+</tr>
+<tr><td height="22" align="left" class="content">Michael Heaslip</td>
+<td height="22" align="center" class="content">1.94</td>
+<td height="22" align="center" class="content">225.16</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">80</td>
+</tr>
+<tr><td height="22" align="left" class="content">David Bradley</td>
+<td height="22" align="center" class="content">1.95</td>
+<td height="22" align="center" class="content">203.9</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">80</td>
+</tr>
+<tr><td height="22" align="left" class="content">Nick Shaw</td>
+<td height="22" align="center" class="content">1.92</td>
+<td height="22" align="center" class="content">377.76</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">80</td>
+</tr>
+<tr><td height="22" align="left" class="content">David Hughes</td>
+<td height="22" align="center" class="content">2.01</td>
+<td height="22" align="center" class="content">111.14</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">79</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ben Moag</td>
+<td height="22" align="center" class="content">1.94</td>
+<td height="22" align="center" class="content">137.75</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">79</td>
+</tr>
+<tr><td height="22" align="left" class="content">James Crowe</td>
+<td height="22" align="center" class="content">1.93</td>
+<td height="22" align="center" class="content">352.24</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">78</td>
+</tr>
+<tr><td height="22" align="left" class="content">Dave Taggart</td>
+<td height="22" align="center" class="content">1.96</td>
+<td height="22" align="center" class="content">63.58</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">77</td>
+</tr>
+<tr><td height="22" align="left" class="content">Lee Roy</td>
+<td height="22" align="center" class="content">1.98</td>
+<td height="22" align="center" class="content">140.3</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">77</td>
+</tr>
+<tr><td height="22" align="left" class="content">Kenny Herron</td>
+<td height="22" align="center" class="content">1.87</td>
+<td height="22" align="center" class="content">1705.63</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">77</td>
+</tr>
+<tr><td height="22" align="left" class="content">Charlie McCrea</td>
+<td height="22" align="center" class="content">1.98</td>
+<td height="22" align="center" class="content">68.42</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">77</td>
+</tr>
+<tr><td height="22" align="left" class="content">Peter Storeng</td>
+<td height="22" align="center" class="content">1.94</td>
+<td height="22" align="center" class="content">60.85</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">77</td>
+</tr>
+<tr><td height="22" align="left" class="content">Michael Lyons</td>
+<td height="22" align="center" class="content">1.95</td>
+<td height="22" align="center" class="content">472.34</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">77</td>
+</tr>
+<tr><td height="22" align="left" class="content">Nikki Lowry</td>
+<td height="22" align="center" class="content">2.01</td>
+<td height="22" align="center" class="content">99.41</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">76</td>
+</tr>
+<tr><td height="22" align="left" class="content">Angus White</td>
+<td height="22" align="center" class="content">1.97</td>
+<td height="22" align="center" class="content">228.82</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">76</td>
+</tr>
+<tr><td height="22" align="left" class="content">Rosie Louise</td>
+<td height="22" align="center" class="content">1.95</td>
+<td height="22" align="center" class="content">327.11</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">75</td>
+</tr>
+<tr><td height="22" align="left" class="content">Rachael Boyd</td>
+<td height="22" align="center" class="content">1.93</td>
+<td height="22" align="center" class="content">537.46</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">75</td>
+</tr>
+<tr><td height="22" align="left" class="content">Pete Gamble</td>
+<td height="22" align="center" class="content">1.95</td>
+<td height="22" align="center" class="content">446.87</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">74</td>
+</tr>
+<tr><td height="22" align="left" class="content">Melissa Wood</td>
+<td height="22" align="center" class="content">2.03</td>
+<td height="22" align="center" class="content">789.15</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">74</td>
+</tr>
+<tr><td height="22" align="left" class="content">Emma Ferguson</td>
+<td height="22" align="center" class="content">1.97</td>
+<td height="22" align="center" class="content">80.07</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">73</td>
+</tr>
+<tr><td height="22" align="left" class="content">David Grant BodyRox PT</td>
+<td height="22" align="center" class="content">1.98</td>
+<td height="22" align="center" class="content">97.67</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">72</td>
+</tr>
+<tr><td height="22" align="left" class="content">Vicki Henderson</td>
+<td height="22" align="center" class="content">2.02</td>
+<td height="22" align="center" class="content">127.68</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">72</td>
+</tr>
+<tr><td height="22" align="left" class="content">Matty McParland</td>
+<td height="22" align="center" class="content">2.01</td>
+<td height="22" align="center" class="content">86.83</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">72</td>
+</tr>
+<tr><td height="22" align="left" class="content">Peter Adamson</td>
+<td height="22" align="center" class="content">1.95</td>
+<td height="22" align="center" class="content">501.23</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">72</td>
+</tr>
+<tr><td height="22" align="left" class="content">David Samuel Corrie</td>
+<td height="22" align="center" class="content">1.98</td>
+<td height="22" align="center" class="content">173.26</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">72</td>
+</tr>
+<tr><td height="22" align="left" class="content">Vikky Reid</td>
+<td height="22" align="center" class="content">2.07</td>
+<td height="22" align="center" class="content">52.07</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">72</td>
+</tr>
+<tr><td height="22" align="left" class="content">Andrew Beverland</td>
+<td height="22" align="center" class="content">1.94</td>
+<td height="22" align="center" class="content">417.87</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">72</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jayna Smyth</td>
+<td height="22" align="center" class="content">2.01</td>
+<td height="22" align="center" class="content">72</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">71</td>
+</tr>
+<tr><td height="22" align="left" class="content">Hoi Yee Wong</td>
+<td height="22" align="center" class="content">2.07</td>
+<td height="22" align="center" class="content">42.43</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">71</td>
+</tr>
+<tr><td height="22" align="left" class="content">Andrew James McKinney</td>
+<td height="22" align="center" class="content">1.98</td>
+<td height="22" align="center" class="content">96.22</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">71</td>
+</tr>
+<tr><td height="22" align="left" class="content">Bradley Snyman</td>
+<td height="22" align="center" class="content">1.98</td>
+<td height="22" align="center" class="content">172.22</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">71</td>
+</tr>
+<tr><td height="22" align="left" class="content">Scott Baxter</td>
+<td height="22" align="center" class="content">1.91</td>
+<td height="22" align="center" class="content">772.6</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">71</td>
+</tr>
+<tr><td height="22" align="left" class="content">Andy Martin</td>
+<td height="22" align="center" class="content">1.97</td>
+<td height="22" align="center" class="content">203.03</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">71</td>
+</tr>
+<tr><td height="22" align="left" class="content">James McCluskey</td>
+<td height="22" align="center" class="content">2.00</td>
+<td height="22" align="center" class="content">93.7</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">70</td>
+</tr>
+<tr><td height="22" align="left" class="content">Rachael Anne</td>
+<td height="22" align="center" class="content">2.03</td>
+<td height="22" align="center" class="content">868.41</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">70</td>
+</tr>
+<tr><td height="22" align="left" class="content">Christian Curran</td>
+<td height="22" align="center" class="content">1.97</td>
+<td height="22" align="center" class="content">366.78</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">69</td>
+</tr>
+<tr><td height="22" align="left" class="content">Andrew McMaster</td>
+<td height="22" align="center" class="content">1.93</td>
+<td height="22" align="center" class="content">187.01</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">69</td>
+</tr>
+<tr><td height="22" align="left" class="content">Erin Ringland</td>
+<td height="22" align="center" class="content">2.00</td>
+<td height="22" align="center" class="content">69.11</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">69</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ryan Whittington</td>
+<td height="22" align="center" class="content">2.02</td>
+<td height="22" align="center" class="content">28.84</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">68</td>
+</tr>
+<tr><td height="22" align="left" class="content">Tom Phillips</td>
+<td height="22" align="center" class="content">1.99</td>
+<td height="22" align="center" class="content">274.1</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">68</td>
+</tr>
+<tr><td height="22" align="left" class="content">Megan Mckinley</td>
+<td height="22" align="center" class="content">1.98</td>
+<td height="22" align="center" class="content">281.97</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">68</td>
+</tr>
+<tr><td height="22" align="left" class="content">Michael Rice</td>
+<td height="22" align="center" class="content">1.98</td>
+<td height="22" align="center" class="content">157.6</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">67</td>
+</tr>
+<tr><td height="22" align="left" class="content">Steven Boal</td>
+<td height="22" align="center" class="content">2.04</td>
+<td height="22" align="center" class="content">272.08</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">67</td>
+</tr>
+<tr><td height="22" align="left" class="content">Andrew Lewis Fraser</td>
+<td height="22" align="center" class="content">2.00</td>
+<td height="22" align="center" class="content">353.28</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">66</td>
+</tr>
+<tr><td height="22" align="left" class="content">Laura Wormald</td>
+<td height="22" align="center" class="content">2.05</td>
+<td height="22" align="center" class="content">100.01</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">65</td>
+</tr>
+<tr><td height="22" align="left" class="content">Alistair Clarke</td>
+<td height="22" align="center" class="content">1.99</td>
+<td height="22" align="center" class="content">155.42</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">65</td>
+</tr>
+<tr><td height="22" align="left" class="content">Peter Bate</td>
+<td height="22" align="center" class="content">2.02</td>
+<td height="22" align="center" class="content">151.3</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">64</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jamie Macdonald</td>
+<td height="22" align="center" class="content">2.08</td>
+<td height="22" align="center" class="content">190.86</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">63</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jill Gourley</td>
+<td height="22" align="center" class="content">2.07</td>
+<td height="22" align="center" class="content">100.48</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">63</td>
+</tr>
+<tr><td height="22" align="left" class="content">David Moore</td>
+<td height="22" align="center" class="content">2.00</td>
+<td height="22" align="center" class="content">297.39</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">63</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ruth Hewitt</td>
+<td height="22" align="center" class="content">2.07</td>
+<td height="22" align="center" class="content">29.53</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">62</td>
+</tr>
+<tr><td height="22" align="left" class="content">Cormac Smyth</td>
+<td height="22" align="center" class="content">2.07</td>
+<td height="22" align="center" class="content">74.12</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">62</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ricky Mcgowan</td>
+<td height="22" align="center" class="content">2.03</td>
+<td height="22" align="center" class="content">265.59</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">62</td>
+</tr>
+<tr><td height="22" align="left" class="content">Alastair Keith</td>
+<td height="22" align="center" class="content">1.99</td>
+<td height="22" align="center" class="content">124.96</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">62</td>
+</tr>
+<tr><td height="22" align="left" class="content">Christina Johnston</td>
+<td height="22" align="center" class="content">2.03</td>
+<td height="22" align="center" class="content">189.34</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">61</td>
+</tr>
+<tr><td height="22" align="left" class="content">Susie Calvert</td>
+<td height="22" align="center" class="content">2.09</td>
+<td height="22" align="center" class="content">99.66</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">60</td>
+</tr>
+<tr><td height="22" align="left" class="content">Gareth Elliott</td>
+<td height="22" align="center" class="content">2.05</td>
+<td height="22" align="center" class="content">85.83</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">60</td>
+</tr>
+<tr><td height="22" align="left" class="content">Megan Kristina</td>
+<td height="22" align="center" class="content">2.00</td>
+<td height="22" align="center" class="content">157.09</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">59</td>
+</tr>
+<tr><td height="22" align="left" class="content">Michael Warnock</td>
+<td height="22" align="center" class="content">2.05</td>
+<td height="22" align="center" class="content">100.05</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">59</td>
+</tr>
+<tr><td height="22" align="left" class="content">Stephen Alan Millar</td>
+<td height="22" align="center" class="content">2.01</td>
+<td height="22" align="center" class="content">735.57</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">59</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ashleigh Mills</td>
+<td height="22" align="center" class="content">2.10</td>
+<td height="22" align="center" class="content">42.35</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">58</td>
+</tr>
+<tr><td height="22" align="left" class="content">Claire Johnson</td>
+<td height="22" align="center" class="content">1.98</td>
+<td height="22" align="center" class="content">1253.56</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">56</td>
+</tr>
+<tr><td height="22" align="left" class="content">Matt Montgomery</td>
+<td height="22" align="center" class="content">2.09</td>
+<td height="22" align="center" class="content">136.22</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">56</td>
+</tr>
+<tr><td height="22" align="left" class="content">Alison Blayney</td>
+<td height="22" align="center" class="content">2.12</td>
+<td height="22" align="center" class="content">85.4</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">55</td>
+</tr>
+<tr><td height="22" align="left" class="content">Clare McBrien</td>
+<td height="22" align="center" class="content">2.04</td>
+<td height="22" align="center" class="content">337.19</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">55</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ally Claire</td>
+<td height="22" align="center" class="content">2.12</td>
+<td height="22" align="center" class="content">131.34</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">54</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ruth E Watson</td>
+<td height="22" align="center" class="content">2.13</td>
+<td height="22" align="center" class="content">307.95</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">54</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jonathan Mahoney</td>
+<td height="22" align="center" class="content">2.09</td>
+<td height="22" align="center" class="content">76.55</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">54</td>
+</tr>
+<tr><td height="22" align="left" class="content">Susy McKinley</td>
+<td height="22" align="center" class="content">2.09</td>
+<td height="22" align="center" class="content">72.11</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">54</td>
+</tr>
+<tr><td height="22" align="left" class="content">Aaron Coulter</td>
+<td height="22" align="center" class="content">2.02</td>
+<td height="22" align="center" class="content">157.68</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">53</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jonathan Jackson</td>
+<td height="22" align="center" class="content">2.06</td>
+<td height="22" align="center" class="content">300.91</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">53</td>
+</tr>
+<tr><td height="22" align="left" class="content">Chris Minnis</td>
+<td height="22" align="center" class="content">2.05</td>
+<td height="22" align="center" class="content">192.36</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">53</td>
+</tr>
+<tr><td height="22" align="left" class="content">Emily Mitchell</td>
+<td height="22" align="center" class="content">2.02</td>
+<td height="22" align="center" class="content">497.07</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">52</td>
+</tr>
+<tr><td height="22" align="left" class="content">Louise McErlane</td>
+<td height="22" align="center" class="content">2.12</td>
+<td height="22" align="center" class="content">74.3</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">51</td>
+</tr>
+<tr><td height="22" align="left" class="content">Nathan Lynch</td>
+<td height="22" align="center" class="content">2.06</td>
+<td height="22" align="center" class="content">156.39</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">50</td>
+</tr>
+<tr><td height="22" align="left" class="content">Aaron Harvey</td>
+<td height="22" align="center" class="content">2.07</td>
+<td height="22" align="center" class="content">105.53</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">50</td>
+</tr>
+<tr><td height="22" align="left" class="content">Gareth Ruck</td>
+<td height="22" align="center" class="content">2.13</td>
+<td height="22" align="center" class="content">21.85</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">49</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jason Brown</td>
+<td height="22" align="center" class="content">2.19</td>
+<td height="22" align="center" class="content">4.81</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">49</td>
+</tr>
+<tr><td height="22" align="left" class="content">Marianna Smyth</td>
+<td height="22" align="center" class="content">2.08</td>
+<td height="22" align="center" class="content">147.99</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">48</td>
+</tr>
+<tr><td height="22" align="left" class="content">Hannah Smith</td>
+<td height="22" align="center" class="content">2.10</td>
+<td height="22" align="center" class="content">74.74</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">48</td>
+</tr>
+<tr><td height="22" align="left" class="content">Anna Clugston</td>
+<td height="22" align="center" class="content">2.12</td>
+<td height="22" align="center" class="content">33.98</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">48</td>
+</tr>
+<tr><td height="22" align="left" class="content">Michelle Bells</td>
+<td height="22" align="center" class="content">2.20</td>
+<td height="22" align="center" class="content">150.41</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">47</td>
+</tr>
+<tr><td height="22" align="left" class="content">Steve Turnbull</td>
+<td height="22" align="center" class="content">2.12</td>
+<td height="22" align="center" class="content">82.37</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">47</td>
+</tr>
+<tr><td height="22" align="left" class="content">Steven Butler</td>
+<td height="22" align="center" class="content">2.13</td>
+<td height="22" align="center" class="content">266.07</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">47</td>
+</tr>
+<tr><td height="22" align="left" class="content">Clare Dawson</td>
+<td height="22" align="center" class="content">2.19</td>
+<td height="22" align="center" class="content">10.58</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">47</td>
+</tr>
+<tr><td height="22" align="left" class="content">Roger Higginson</td>
+<td height="22" align="center" class="content">2.13</td>
+<td height="22" align="center" class="content">70.54</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">47</td>
+</tr>
+<tr><td height="22" align="left" class="content">Michael Boyd</td>
+<td height="22" align="center" class="content">2.14</td>
+<td height="22" align="center" class="content">41.63</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">46</td>
+</tr>
+<tr><td height="22" align="left" class="content">Emily Smith</td>
+<td height="22" align="center" class="content">2.10</td>
+<td height="22" align="center" class="content">152.86</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">45</td>
+</tr>
+<tr><td height="22" align="left" class="content">James Fraser</td>
+<td height="22" align="center" class="content">2.08</td>
+<td height="22" align="center" class="content">157.46</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">45</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ross Kennedy</td>
+<td height="22" align="center" class="content">2.20</td>
+<td height="22" align="center" class="content">40.71</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">45</td>
+</tr>
+<tr><td height="22" align="left" class="content">Katie Megaw</td>
+<td height="22" align="center" class="content">2.01</td>
+<td height="22" align="center" class="content">750</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">44</td>
+</tr>
+<tr><td height="22" align="left" class="content">Robin Lawther</td>
+<td height="22" align="center" class="content">2.31</td>
+<td height="22" align="center" class="content">1.37</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">43</td>
+</tr>
+<tr><td height="22" align="left" class="content">Glenn Harrison</td>
+<td height="22" align="center" class="content">2.16</td>
+<td height="22" align="center" class="content">21.61</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">42</td>
+</tr>
+<tr><td height="22" align="left" class="content">Sophie Greene</td>
+<td height="22" align="center" class="content">2.20</td>
+<td height="22" align="center" class="content">20.62</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">41</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ryan Wiles</td>
+<td height="22" align="center" class="content">2.17</td>
+<td height="22" align="center" class="content">46.16</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">39</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jonny Tennyson</td>
+<td height="22" align="center" class="content">2.21</td>
+<td height="22" align="center" class="content">73.66</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">38</td>
+</tr>
+<tr><td height="22" align="left" class="content">Aaron Vance</td>
+<td height="22" align="center" class="content">2.20</td>
+<td height="22" align="center" class="content">90.36</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">38</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jude Anketell</td>
+<td height="22" align="center" class="content">2.22</td>
+<td height="22" align="center" class="content">46.97</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">37</td>
+</tr>
+<tr><td height="22" align="left" class="content">Claire Macartney</td>
+<td height="22" align="center" class="content">2.07</td>
+<td height="22" align="center" class="content">1210.41</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">37</td>
+</tr>
+<tr><td height="22" align="left" class="content">Dan Acheson</td>
+<td height="22" align="center" class="content">2.17</td>
+<td height="22" align="center" class="content">182.15</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">37</td>
+</tr>
+<tr><td height="22" align="left" class="content">Andrew Christie</td>
+<td height="22" align="center" class="content">2.12</td>
+<td height="22" align="center" class="content">68.96</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">35</td>
+</tr>
+<tr><td height="22" align="left" class="content">Marty Atkinson</td>
+<td height="22" align="center" class="content">2.19</td>
+<td height="22" align="center" class="content">176.43</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">34</td>
+</tr>
+<tr><td height="22" align="left" class="content">Steven Hayes</td>
+<td height="22" align="center" class="content">2.19</td>
+<td height="22" align="center" class="content">212.79</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">34</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jon Caldwell</td>
+<td height="22" align="center" class="content">2.22</td>
+<td height="22" align="center" class="content">69.62</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">34</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ben McDonald</td>
+<td height="22" align="center" class="content">2.10</td>
+<td height="22" align="center" class="content">195.62</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">34</td>
+</tr>
+<tr><td height="22" align="left" class="content">Matt Megaw</td>
+<td height="22" align="center" class="content">2.16</td>
+<td height="22" align="center" class="content">225.68</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">33</td>
+</tr>
+<tr><td height="22" align="left" class="content">Josie Knowlser</td>
+<td height="22" align="center" class="content">2.16</td>
+<td height="22" align="center" class="content">252.71</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">33</td>
+</tr>
+<tr><td height="22" align="left" class="content">Hannah Hunt</td>
+<td height="22" align="center" class="content">2.13</td>
+<td height="22" align="center" class="content">169.17</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">33</td>
+</tr>
+<tr><td height="22" align="left" class="content">Andy Hedgy Hayes</td>
+<td height="22" align="center" class="content">2.13</td>
+<td height="22" align="center" class="content">126.27</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">32</td>
+</tr>
+<tr><td height="22" align="left" class="content">Mark Adamson</td>
+<td height="22" align="center" class="content">2.13</td>
+<td height="22" align="center" class="content">125.6</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">32</td>
+</tr>
+<tr><td height="22" align="left" class="content">Cait Donnelly</td>
+<td height="22" align="center" class="content">2.31</td>
+<td height="22" align="center" class="content">9.27</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">32</td>
+</tr>
+<tr><td height="22" align="left" class="content">Simon Anthony Kus</td>
+<td height="22" align="center" class="content">2.27</td>
+<td height="22" align="center" class="content">4.76</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">32</td>
+</tr>
+<tr><td height="22" align="left" class="content">Adam McGibbon</td>
+<td height="22" align="center" class="content">2.20</td>
+<td height="22" align="center" class="content">648.81</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">30</td>
+</tr>
+<tr><td height="22" align="left" class="content">Marcus Atkinson</td>
+<td height="22" align="center" class="content">2.28</td>
+<td height="22" align="center" class="content">5.54</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">29</td>
+</tr>
+<tr><td height="22" align="left" class="content">Andrew McNeice</td>
+<td height="22" align="center" class="content">2.21</td>
+<td height="22" align="center" class="content">179.69</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">29</td>
+</tr>
+<tr><td height="22" align="left" class="content">Karena Kearney</td>
+<td height="22" align="center" class="content">2.23</td>
+<td height="22" align="center" class="content">291.55</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">29</td>
+</tr>
+<tr><td height="22" align="left" class="content">Chris Campbell</td>
+<td height="22" align="center" class="content">2.18</td>
+<td height="22" align="center" class="content">112.37</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">28</td>
+</tr>
+<tr><td height="22" align="left" class="content">Tina Cali Miller</td>
+<td height="22" align="center" class="content">2.24</td>
+<td height="22" align="center" class="content">46.01</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">27</td>
+</tr>
+<tr><td height="22" align="left" class="content">Hannah Ewi</td>
+<td height="22" align="center" class="content">2.23</td>
+<td height="22" align="center" class="content">90.22</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">26</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ben Emerson</td>
+<td height="22" align="center" class="content">2.22</td>
+<td height="22" align="center" class="content">111.76</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">25</td>
+</tr>
+<tr><td height="22" align="left" class="content">Andy Boal</td>
+<td height="22" align="center" class="content">2.23</td>
+<td height="22" align="center" class="content">320.43</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">25</td>
+</tr>
+<tr><td height="22" align="left" class="content">Rachel Elizabeth</td>
+<td height="22" align="center" class="content">2.22</td>
+<td height="22" align="center" class="content">208.8</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">25</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ashleigh Nicolay</td>
+<td height="22" align="center" class="content">2.24</td>
+<td height="22" align="center" class="content">61.25</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">25</td>
+</tr>
+<tr><td height="22" align="left" class="content">Lara Luke Tombraider</td>
+<td height="22" align="center" class="content">2.27</td>
+<td height="22" align="center" class="content">286.4</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">23</td>
+</tr>
+<tr><td height="22" align="left" class="content">Mark Abraham</td>
+<td height="22" align="center" class="content">2.26</td>
+<td height="22" align="center" class="content">1171.44</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">23</td>
+</tr>
+<tr><td height="22" align="left" class="content">Graeme Erskine</td>
+<td height="22" align="center" class="content">2.28</td>
+<td height="22" align="center" class="content">10.58</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">23</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jess Brien</td>
+<td height="22" align="center" class="content">2.30</td>
+<td height="22" align="center" class="content">190.53</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">22</td>
+</tr>
+<tr><td height="22" align="left" class="content">Christine Faulkner</td>
+<td height="22" align="center" class="content">2.39</td>
+<td height="22" align="center" class="content">8.77</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">21</td>
+</tr>
+<tr><td height="22" align="left" class="content">Laura Jones</td>
+<td height="22" align="center" class="content">2.30</td>
+<td height="22" align="center" class="content">317.59</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">21</td>
+</tr>
+<tr><td height="22" align="left" class="content">Feimiao Qiu</td>
+<td height="22" align="center" class="content">2.28</td>
+<td height="22" align="center" class="content">570.76</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">21</td>
+</tr>
+<tr><td height="22" align="left" class="content">Susanna Gilliland</td>
+<td height="22" align="center" class="content">2.23</td>
+<td height="22" align="center" class="content">83.28</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">21</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jonny Pillar</td>
+<td height="22" align="center" class="content">2.29</td>
+<td height="22" align="center" class="content">63.5</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">21</td>
+</tr>
+<tr><td height="22" align="left" class="content">Heather McCormick</td>
+<td height="22" align="center" class="content">2.25</td>
+<td height="22" align="center" class="content">333.26</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">21</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jordan Rusk</td>
+<td height="22" align="center" class="content">2.25</td>
+<td height="22" align="center" class="content">740.38</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">20</td>
+</tr>
+<tr><td height="22" align="left" class="content">Derek Michael Crosby</td>
+<td height="22" align="center" class="content">2.31</td>
+<td height="22" align="center" class="content">411.1</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">20</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ryan Jess</td>
+<td height="22" align="center" class="content">2.32</td>
+<td height="22" align="center" class="content">337.7</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">19</td>
+</tr>
+<tr><td height="22" align="left" class="content">Lauren-Amie Rogers</td>
+<td height="22" align="center" class="content">2.40</td>
+<td height="22" align="center" class="content">96.64</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">19</td>
+</tr>
+<tr><td height="22" align="left" class="content">Latifa Akay</td>
+<td height="22" align="center" class="content">2.24</td>
+<td height="22" align="center" class="content">338.25</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">19</td>
+</tr>
+<tr><td height="22" align="left" class="content">Sabrina Dixon</td>
+<td height="22" align="center" class="content">2.30</td>
+<td height="22" align="center" class="content">122.46</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">18</td>
+</tr>
+<tr><td height="22" align="left" class="content">Rig Sy</td>
+<td height="22" align="center" class="content">2.39</td>
+<td height="22" align="center" class="content">394.59</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">18</td>
+</tr>
+<tr><td height="22" align="left" class="content">Felicity Robertson</td>
+<td height="22" align="center" class="content">2.39</td>
+<td height="22" align="center" class="content">22.56</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">17</td>
+</tr>
+<tr><td height="22" align="left" class="content">Phoebe Adams</td>
+<td height="22" align="center" class="content">2.24</td>
+<td height="22" align="center" class="content">281.4</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">17</td>
+</tr>
+<tr><td height="22" align="left" class="content">Clare Malseed</td>
+<td height="22" align="center" class="content">2.25</td>
+<td height="22" align="center" class="content">83.98</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">17</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ashleigh Lisette Collim</td>
+<td height="22" align="center" class="content">2.43</td>
+<td height="22" align="center" class="content">7.83</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">17</td>
+</tr>
+<tr><td height="22" align="left" class="content">Chris Pickett</td>
+<td height="22" align="center" class="content">2.48</td>
+<td height="22" align="center" class="content">0.62</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">16</td>
+</tr>
+<tr><td height="22" align="left" class="content">Fiona Kidd</td>
+<td height="22" align="center" class="content">2.47</td>
+<td height="22" align="center" class="content">70.97</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">16</td>
+</tr>
+<tr><td height="22" align="left" class="content">J Rudolph McCormick</td>
+<td height="22" align="center" class="content">2.37</td>
+<td height="22" align="center" class="content">161.87</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">16</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jonny Rainey</td>
+<td height="22" align="center" class="content">2.47</td>
+<td height="22" align="center" class="content">12.23</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">16</td>
+</tr>
+<tr><td height="22" align="left" class="content">Curtis Adair</td>
+<td height="22" align="center" class="content">2.37</td>
+<td height="22" align="center" class="content">67.38</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">16</td>
+</tr>
+<tr><td height="22" align="left" class="content">Sophie Cowan</td>
+<td height="22" align="center" class="content">2.31</td>
+<td height="22" align="center" class="content">170.45</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">15</td>
+</tr>
+<tr><td height="22" align="left" class="content">Burnside Joshua</td>
+<td height="22" align="center" class="content">2.46</td>
+<td height="22" align="center" class="content">27.99</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">15</td>
+</tr>
+<tr><td height="22" align="left" class="content">Nuala McAdams</td>
+<td height="22" align="center" class="content">2.49</td>
+<td height="22" align="center" class="content">87.84</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">15</td>
+</tr>
+<tr><td height="22" align="left" class="content">Samantha 曉詩 Tan</td>
+<td height="22" align="center" class="content">2.63</td>
+<td height="22" align="center" class="content">145.4</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">14</td>
+</tr>
+<tr><td height="22" align="left" class="content">James Hamilton</td>
+<td height="22" align="center" class="content">2.45</td>
+<td height="22" align="center" class="content">91.12</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">14</td>
+</tr>
+<tr><td height="22" align="left" class="content">Daniel McWilliams</td>
+<td height="22" align="center" class="content">2.50</td>
+<td height="22" align="center" class="content">18.12</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">14</td>
+</tr>
+<tr><td height="22" align="left" class="content">Bernard Shaw</td>
+<td height="22" align="center" class="content">2.49</td>
+<td height="22" align="center" class="content">17.86</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">14</td>
+</tr>
+<tr><td height="22" align="left" class="content">Qub Snow</td>
+<td height="22" align="center" class="content">2.39</td>
+<td height="22" align="center" class="content">178.86</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">14</td>
+</tr>
+<tr><td height="22" align="left" class="content">Vp Equality</td>
+<td height="22" align="center" class="content">2.69</td>
+<td height="22" align="center" class="content">178.94</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">14</td>
+</tr>
+<tr><td height="22" align="left" class="content">Rosie Breen</td>
+<td height="22" align="center" class="content">2.52</td>
+<td height="22" align="center" class="content">83.3</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">14</td>
+</tr>
+<tr><td height="22" align="left" class="content">Rebecca O&#39;Hare</td>
+<td height="22" align="center" class="content">2.32</td>
+<td height="22" align="center" class="content">250.12</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">14</td>
+</tr>
+<tr><td height="22" align="left" class="content">Andrew Dunlop</td>
+<td height="22" align="center" class="content">2.55</td>
+<td height="22" align="center" class="content">372.66</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">14</td>
+</tr>
+<tr><td height="22" align="left" class="content">Rachel Cadwallader</td>
+<td height="22" align="center" class="content">2.46</td>
+<td height="22" align="center" class="content">55.99</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">14</td>
+</tr>
+<tr><td height="22" align="left" class="content">Caoimhe OSullivan</td>
+<td height="22" align="center" class="content">2.42</td>
+<td height="22" align="center" class="content">159.68</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">13</td>
+</tr>
+<tr><td height="22" align="left" class="content">Qub Finance-Actuarial Soc</td>
+<td height="22" align="center" class="content">2.83</td>
+<td height="22" align="center" class="content">224.68</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">13</td>
+</tr>
+<tr><td height="22" align="left" class="content">Vincent Murray</td>
+<td height="22" align="center" class="content">2.54</td>
+<td height="22" align="center" class="content">77.1</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">13</td>
+</tr>
+<tr><td height="22" align="left" class="content">Alex Xander Sprague</td>
+<td height="22" align="center" class="content">2.53</td>
+<td height="22" align="center" class="content">53.82</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">13</td>
+</tr>
+<tr><td height="22" align="left" class="content">Rebecca Afrojack Hedley</td>
+<td height="22" align="center" class="content">2.53</td>
+<td height="22" align="center" class="content">166.23</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">13</td>
+</tr>
+<tr><td height="22" align="left" class="content">Úna Boyd</td>
+<td height="22" align="center" class="content">2.40</td>
+<td height="22" align="center" class="content">138.44</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">13</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jonny Best</td>
+<td height="22" align="center" class="content">2.41</td>
+<td height="22" align="center" class="content">188.29</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">13</td>
+</tr>
+<tr><td height="22" align="left" class="content">Sarah McKegney</td>
+<td height="22" align="center" class="content">2.60</td>
+<td height="22" align="center" class="content">132.38</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">13</td>
+</tr>
+<tr><td height="22" align="left" class="content">Martin Rooney</td>
+<td height="22" align="center" class="content">2.55</td>
+<td height="22" align="center" class="content">63.55</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">12</td>
+</tr>
+<tr><td height="22" align="left" class="content">Philip Prenter</td>
+<td height="22" align="center" class="content">2.82</td>
+<td height="22" align="center" class="content">77.82</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">12</td>
+</tr>
+<tr><td height="22" align="left" class="content">Russell Berry</td>
+<td height="22" align="center" class="content">2.67</td>
+<td height="22" align="center" class="content">160.78</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">12</td>
+</tr>
+<tr><td height="22" align="left" class="content">Qubmc Mascot Norm</td>
+<td height="22" align="center" class="content">2.38</td>
+<td height="22" align="center" class="content">92.88</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">12</td>
+</tr>
+<tr><td height="22" align="left" class="content">Connor Beattie</td>
+<td height="22" align="center" class="content">2.51</td>
+<td height="22" align="center" class="content">49.33</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">12</td>
+</tr>
+<tr><td height="22" align="left" class="content">Sarah Wcenter</td>
+<td height="22" align="center" class="content">2.58</td>
+<td height="22" align="center" class="content">113.34</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">12</td>
+</tr>
+<tr><td height="22" align="left" class="content">Vincent Tsang</td>
+<td height="22" align="center" class="content">2.42</td>
+<td height="22" align="center" class="content">209.06</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">12</td>
+</tr>
+<tr><td height="22" align="left" class="content">Alan Clarke</td>
+<td height="22" align="center" class="content">2.52</td>
+<td height="22" align="center" class="content">110.8</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">12</td>
+</tr>
+<tr><td height="22" align="left" class="content">Stacey Stitt</td>
+<td height="22" align="center" class="content">2.51</td>
+<td height="22" align="center" class="content">14.09</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">12</td>
+</tr>
+<tr><td height="22" align="left" class="content">Laura Hamilton</td>
+<td height="22" align="center" class="content">2.30</td>
+<td height="22" align="center" class="content">46.01</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">12</td>
+</tr>
+<tr><td height="22" align="left" class="content">Luke Cian Powell</td>
+<td height="22" align="center" class="content">2.65</td>
+<td height="22" align="center" class="content">72.98</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">11</td>
+</tr>
+<tr><td height="22" align="left" class="content">Michael Fyfe</td>
+<td height="22" align="center" class="content">2.36</td>
+<td height="22" align="center" class="content">34.85</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">11</td>
+</tr>
+<tr><td height="22" align="left" class="content">Cara Cunningham</td>
+<td height="22" align="center" class="content">2.36</td>
+<td height="22" align="center" class="content">3.56</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">11</td>
+</tr>
+<tr><td height="22" align="left" class="content">John Higgins</td>
+<td height="22" align="center" class="content">2.62</td>
+<td height="22" align="center" class="content">73.31</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">11</td>
+</tr>
+<tr><td height="22" align="left" class="content">Karen Tierney</td>
+<td height="22" align="center" class="content">2.67</td>
+<td height="22" align="center" class="content">34.5</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">11</td>
+</tr>
+<tr><td height="22" align="left" class="content">Nuala Love</td>
+<td height="22" align="center" class="content">2.33</td>
+<td height="22" align="center" class="content">221.15</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">11</td>
+</tr>
+<tr><td height="22" align="left" class="content">Mark Mitten</td>
+<td height="22" align="center" class="content">2.48</td>
+<td height="22" align="center" class="content">67.1</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">11</td>
+</tr>
+<tr><td height="22" align="left" class="content">Adam Sims</td>
+<td height="22" align="center" class="content">2.70</td>
+<td height="22" align="center" class="content">520.91</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">11</td>
+</tr>
+<tr><td height="22" align="left" class="content">Helen Bergin</td>
+<td height="22" align="center" class="content">2.44</td>
+<td height="22" align="center" class="content">32.74</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">10</td>
+</tr>
+<tr><td height="22" align="left" class="content">Yoke Belfast</td>
+<td height="22" align="center" class="content">2.34</td>
+<td height="22" align="center" class="content">177.94</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">10</td>
+</tr>
+<tr><td height="22" align="left" class="content">Aislín Kearney</td>
+<td height="22" align="center" class="content">2.70</td>
+<td height="22" align="center" class="content">191.63</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">10</td>
+</tr>
+<tr><td height="22" align="left" class="content">Iain Griffin</td>
+<td height="22" align="center" class="content">2.56</td>
+<td height="22" align="center" class="content">198.95</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">10</td>
+</tr>
+<tr><td height="22" align="left" class="content">Meeghan Rogers</td>
+<td height="22" align="center" class="content">2.64</td>
+<td height="22" align="center" class="content">259.54</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">10</td>
+</tr>
+<tr><td height="22" align="left" class="content">Carly Drysdale</td>
+<td height="22" align="center" class="content">2.61</td>
+<td height="22" align="center" class="content">98.42</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">10</td>
+</tr>
+<tr><td height="22" align="left" class="content">Phil J Patterson</td>
+<td height="22" align="center" class="content">2.49</td>
+<td height="22" align="center" class="content">228.96</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">10</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ej Chisholm</td>
+<td height="22" align="center" class="content">2.68</td>
+<td height="22" align="center" class="content">126.08</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">10</td>
+</tr>
+<tr><td height="22" align="left" class="content">Anton Dykyi</td>
+<td height="22" align="center" class="content">2.63</td>
+<td height="22" align="center" class="content">405.27</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">10</td>
+</tr>
+<tr><td height="22" align="left" class="content">KT Stevenson</td>
+<td height="22" align="center" class="content">2.74</td>
+<td height="22" align="center" class="content">95.22</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">10</td>
+</tr>
+<tr><td height="22" align="left" class="content">Louise Vera Rodgers</td>
+<td height="22" align="center" class="content">2.42</td>
+<td height="22" align="center" class="content">99.99</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">10</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jenny Conn</td>
+<td height="22" align="center" class="content">2.80</td>
+<td height="22" align="center" class="content">88.7</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">10</td>
+</tr>
+<tr><td height="22" align="left" class="content">Hannah Grainger</td>
+<td height="22" align="center" class="content">2.49</td>
+<td height="22" align="center" class="content">19.84</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">10</td>
+</tr>
+<tr><td height="22" align="left" class="content">Lucy Gray</td>
+<td height="22" align="center" class="content">2.38</td>
+<td height="22" align="center" class="content">21.37</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">10</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jordan Junge</td>
+<td height="22" align="center" class="content">2.65</td>
+<td height="22" align="center" class="content">22.67</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">9</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jennifer Murray</td>
+<td height="22" align="center" class="content">2.37</td>
+<td height="22" align="center" class="content">40.69</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">9</td>
+</tr>
+<tr><td height="22" align="left" class="content">Liam Morrow</td>
+<td height="22" align="center" class="content">2.84</td>
+<td height="22" align="center" class="content">83.46</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">9</td>
+</tr>
+<tr><td height="22" align="left" class="content">Emma Dalzell</td>
+<td height="22" align="center" class="content">2.53</td>
+<td height="22" align="center" class="content">300.7</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">9</td>
+</tr>
+<tr><td height="22" align="left" class="content">Conor Murray</td>
+<td height="22" align="center" class="content">2.69</td>
+<td height="22" align="center" class="content">14.6</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">9</td>
+</tr>
+<tr><td height="22" align="left" class="content">Erika Warren</td>
+<td height="22" align="center" class="content">2.47</td>
+<td height="22" align="center" class="content">138.83</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">9</td>
+</tr>
+<tr><td height="22" align="left" class="content">Affan Hameed</td>
+<td height="22" align="center" class="content">2.63</td>
+<td height="22" align="center" class="content">121.5</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">9</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ciaran McCormick</td>
+<td height="22" align="center" class="content">2.48</td>
+<td height="22" align="center" class="content">12.46</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">9</td>
+</tr>
+<tr><td height="22" align="left" class="content">Holly Jones</td>
+<td height="22" align="center" class="content">2.45</td>
+<td height="22" align="center" class="content">0.54</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">9</td>
+</tr>
+<tr><td height="22" align="left" class="content">Patricia McKiernan</td>
+<td height="22" align="center" class="content">2.72</td>
+<td height="22" align="center" class="content">27.49</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">8</td>
+</tr>
+<tr><td height="22" align="left" class="content">Paula McNeely</td>
+<td height="22" align="center" class="content">2.48</td>
+<td height="22" align="center" class="content">13.03</td>
+<td height="22" align="center" class="content">4</td>
+<td height="22" align="center" class="content">8</td>
+</tr>
+<tr><td height="22" align="left" class="content">Orla Louden</td>
+<td height="22" align="center" class="content">2.68</td>
+<td height="22" align="center" class="content">122.66</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">8</td>
+</tr>
+<tr><td height="22" align="left" class="content">Josh Carr</td>
+<td height="22" align="center" class="content">2.93</td>
+<td height="22" align="center" class="content">87.51</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">8</td>
+</tr>
+<tr><td height="22" align="left" class="content">Chris Williams</td>
+<td height="22" align="center" class="content">2.76</td>
+<td height="22" align="center" class="content">131.67</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">8</td>
+</tr>
+<tr><td height="22" align="left" class="content">Paul Moore</td>
+<td height="22" align="center" class="content">2.76</td>
+<td height="22" align="center" class="content">1.15</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">8</td>
+</tr>
+<tr><td height="22" align="left" class="content">Alex Willis</td>
+<td height="22" align="center" class="content">2.63</td>
+<td height="22" align="center" class="content">57.02</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">8</td>
+</tr>
+<tr><td height="22" align="left" class="content">Elaine Emmett</td>
+<td height="22" align="center" class="content">2.68</td>
+<td height="22" align="center" class="content">93.33</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">8</td>
+</tr>
+<tr><td height="22" align="left" class="content">Nadine Martin</td>
+<td height="22" align="center" class="content">2.66</td>
+<td height="22" align="center" class="content">2.75</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">7</td>
+</tr>
+<tr><td height="22" align="left" class="content">Adam Butler</td>
+<td height="22" align="center" class="content">2.56</td>
+<td height="22" align="center" class="content">8.68</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">7</td>
+</tr>
+<tr><td height="22" align="left" class="content">Joe McMullan</td>
+<td height="22" align="center" class="content">2.69</td>
+<td height="22" align="center" class="content">38.26</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">7</td>
+</tr>
+<tr><td height="22" align="left" class="content">Sabrina Rodgers</td>
+<td height="22" align="center" class="content">2.67</td>
+<td height="22" align="center" class="content">3.23</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">7</td>
+</tr>
+<tr><td height="22" align="left" class="content">Caoilinn Hanna</td>
+<td height="22" align="center" class="content">2.97</td>
+<td height="22" align="center" class="content">38.55</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">7</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jason Philip</td>
+<td height="22" align="center" class="content">2.84</td>
+<td height="22" align="center" class="content">37.02</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">7</td>
+</tr>
+<tr><td height="22" align="left" class="content">Glenn Bleaks</td>
+<td height="22" align="center" class="content">2.57</td>
+<td height="22" align="center" class="content">47.93</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">7</td>
+</tr>
+<tr><td height="22" align="left" class="content">Christopher McNally</td>
+<td height="22" align="center" class="content">2.57</td>
+<td height="22" align="center" class="content">53.75</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">6</td>
+</tr>
+<tr><td height="22" align="left" class="content">Emma O&#39; Donnell</td>
+<td height="22" align="center" class="content">2.58</td>
+<td height="22" align="center" class="content">26.8</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">6</td>
+</tr>
+<tr><td height="22" align="left" class="content">Queens Belfast Sife</td>
+<td height="22" align="center" class="content">2.66</td>
+<td height="22" align="center" class="content">13.65</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">6</td>
+</tr>
+<tr><td height="22" align="left" class="content">Harry Stewart</td>
+<td height="22" align="center" class="content">2.83</td>
+<td height="22" align="center" class="content">56.91</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">6</td>
+</tr>
+<tr><td height="22" align="left" class="content">David McMinn</td>
+<td height="22" align="center" class="content">3.49</td>
+<td height="22" align="center" class="content">0.5</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">6</td>
+</tr>
+<tr><td height="22" align="left" class="content">Vijay Kumar Singh</td>
+<td height="22" align="center" class="content">3.12</td>
+<td height="22" align="center" class="content">4.79</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">6</td>
+</tr>
+<tr><td height="22" align="left" class="content">Caoltan Strain</td>
+<td height="22" align="center" class="content">2.66</td>
+<td height="22" align="center" class="content">19.2</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">6</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jennifer Burnside</td>
+<td height="22" align="center" class="content">2.60</td>
+<td height="22" align="center" class="content">304.15</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">6</td>
+</tr>
+<tr><td height="22" align="left" class="content">Lorenza Scavino</td>
+<td height="22" align="center" class="content">3.17</td>
+<td height="22" align="center" class="content">2.38</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">6</td>
+</tr>
+<tr><td height="22" align="left" class="content">Tim Kelly</td>
+<td height="22" align="center" class="content">2.69</td>
+<td height="22" align="center" class="content">30.53</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">6</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jan Carson</td>
+<td height="22" align="center" class="content">3.05</td>
+<td height="22" align="center" class="content">4.4</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">5</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ross Mccartney</td>
+<td height="22" align="center" class="content">2.85</td>
+<td height="22" align="center" class="content">27.81</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">5</td>
+</tr>
+<tr><td height="22" align="left" class="content">Caoimhe Louise</td>
+<td height="22" align="center" class="content">2.71</td>
+<td height="22" align="center" class="content">151.53</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">5</td>
+</tr>
+<tr><td height="22" align="left" class="content">Patrick Coyle</td>
+<td height="22" align="center" class="content">2.70</td>
+<td height="22" align="center" class="content">45.08</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">5</td>
+</tr>
+<tr><td height="22" align="left" class="content">Harlem Belfast</td>
+<td height="22" align="center" class="content">3.00</td>
+<td height="22" align="center" class="content">12.83</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">5</td>
+</tr>
+<tr><td height="22" align="left" class="content">Stephen McCaughtry</td>
+<td height="22" align="center" class="content">2.92</td>
+<td height="22" align="center" class="content">12.26</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">5</td>
+</tr>
+<tr><td height="22" align="left" class="content">Bronagh N. Macartney</td>
+<td height="22" align="center" class="content">2.61</td>
+<td height="22" align="center" class="content">170.32</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">5</td>
+</tr>
+<tr><td height="22" align="left" class="content">Joni Rock</td>
+<td height="22" align="center" class="content">2.77</td>
+<td height="22" align="center" class="content">33.3</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">5</td>
+</tr>
+<tr><td height="22" align="left" class="content">Davy Sims</td>
+<td height="22" align="center" class="content">2.67</td>
+<td height="22" align="center" class="content">55.2</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">5</td>
+</tr>
+<tr><td height="22" align="left" class="content">Adriana Rusinek</td>
+<td height="22" align="center" class="content">2.70</td>
+<td height="22" align="center" class="content">24.23</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">5</td>
+</tr>
+<tr><td height="22" align="left" class="content">Nick McCarthy</td>
+<td height="22" align="center" class="content">2.87</td>
+<td height="22" align="center" class="content">27.02</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">5</td>
+</tr>
+<tr><td height="22" align="left" class="content">Rachael McBrien</td>
+<td height="22" align="center" class="content">2.88</td>
+<td height="22" align="center" class="content">19.2</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">5</td>
+</tr>
+<tr><td height="22" align="left" class="content">Gareth Clarke</td>
+<td height="22" align="center" class="content">3.49</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">5</td>
+</tr>
+<tr><td height="22" align="left" class="content">Terri Hooley</td>
+<td height="22" align="center" class="content">3.04</td>
+<td height="22" align="center" class="content">2.7</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">4</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jan McNeill</td>
+<td height="22" align="center" class="content">3.19</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">4</td>
+</tr>
+<tr><td height="22" align="left" class="content">Leonard Campbell</td>
+<td height="22" align="center" class="content">3.16</td>
+<td height="22" align="center" class="content">13.17</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">4</td>
+</tr>
+<tr><td height="22" align="left" class="content">Rachel Shanks</td>
+<td height="22" align="center" class="content">2.63</td>
+<td height="22" align="center" class="content">35.76</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">4</td>
+</tr>
+<tr><td height="22" align="left" class="content">Qub Eco Mentors</td>
+<td height="22" align="center" class="content">2.99</td>
+<td height="22" align="center" class="content">11.16</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">3</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jan McNeill Art</td>
+<td height="22" align="center" class="content">3.20</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">3</td>
+</tr>
+<tr><td height="22" align="left" class="content">Alan Mitchell</td>
+<td height="22" align="center" class="content">2.87</td>
+<td height="22" align="center" class="content">10.76</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">3</td>
+</tr>
+<tr><td height="22" align="left" class="content">Hayley Willis</td>
+<td height="22" align="center" class="content">3.24</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">2</td>
+</tr>
+<tr><td height="22" align="left" class="content">Amy Taggart</td>
+<td height="22" align="center" class="content">3.24</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">2</td>
+</tr>
+<tr><td height="22" align="left" class="content">Clare McGivern</td>
+<td height="22" align="center" class="content">2.88</td>
+<td height="22" align="center" class="content">4.42</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">2</td>
+</tr>
+<tr><td height="22" align="left" class="content">Laura Cassidy</td>
+<td height="22" align="center" class="content">3.40</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">2</td>
+</tr>
+<tr><td height="22" align="left" class="content">Ríoghnach Murphy</td>
+<td height="22" align="center" class="content">2.77</td>
+<td height="22" align="center" class="content">5.09</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">2</td>
+</tr>
+<tr><td height="22" align="left" class="content">Kayleigh O&#39; Malley</td>
+<td height="22" align="center" class="content">3.61</td>
+<td height="22" align="center" class="content">17.99</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">2</td>
+</tr>
+<tr><td height="22" align="left" class="content">Kevin Davey</td>
+<td height="22" align="center" class="content">3.54</td>
+<td height="22" align="center" class="content">8.31</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">2</td>
+</tr>
+<tr><td height="22" align="left" class="content">Rachel Mcadam</td>
+<td height="22" align="center" class="content">3.55</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">2</td>
+</tr>
+<tr><td height="22" align="left" class="content">Claire McKenna</td>
+<td height="22" align="center" class="content">3.01</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">2</td>
+</tr>
+<tr><td height="22" align="left" class="content">Amanda Kramer</td>
+<td height="22" align="center" class="content">2.81</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">2</td>
+</tr>
+<tr><td height="22" align="left" class="content">Carys Williams</td>
+<td height="22" align="center" class="content">1.00</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">1</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jess Lea-Wilson</td>
+<td height="22" align="center" class="content">1.00</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">1</td>
+</tr>
+<tr><td height="22" align="left" class="content">Lindsay Adams</td>
+<td height="22" align="center" class="content">1.00</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">3</td>
+<td height="22" align="center" class="content">1</td>
+</tr>
+<tr><td height="22" align="left" class="content">Gemma Wilks</td>
+<td height="22" align="center" class="content">1.00</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">3</td>
+<td height="22" align="center" class="content">1</td>
+</tr>
+<tr><td height="22" align="left" class="content">Christine O&#39;Hara</td>
+<td height="22" align="center" class="content">1.00</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">12</td>
+<td height="22" align="center" class="content">1</td>
+</tr>
+<tr><td height="22" align="left" class="content">Mary Ni Siochain</td>
+<td height="22" align="center" class="content">1.00</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">12</td>
+<td height="22" align="center" class="content">1</td>
+</tr>
+<tr><td height="22" align="left" class="content">Natalie Herron</td>
+<td height="22" align="center" class="content">3.53</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">7</td>
+<td height="22" align="center" class="content">1</td>
+</tr>
+<tr><td height="22" align="left" class="content">Clive B. Walker</td>
+<td height="22" align="center" class="content">3.70</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">9</td>
+<td height="22" align="center" class="content">1</td>
+</tr>
+<tr><td height="22" align="left" class="content">Alison Calvert</td>
+<td height="22" align="center" class="content">3.25</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">1</td>
+</tr>
+<tr><td height="22" align="left" class="content">Niamhín O Dowd</td>
+<td height="22" align="center" class="content">3.31</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">2</td>
+<td height="22" align="center" class="content">1</td>
+</tr>
+<tr><td height="22" align="left" class="content">Lauren McGahey</td>
+<td height="22" align="center" class="content">0.00</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">1</td>
+<td height="22" align="center" class="content">0</td>
+</tr>
+<tr><td height="22" align="left" class="content">Senka Lowris</td>
+<td height="22" align="center" class="content">0.00</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">5</td>
+<td height="22" align="center" class="content">0</td>
+</tr>
+<tr><td height="22" align="left" class="content">Leona Mc Girr</td>
+<td height="22" align="center" class="content">0.00</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">6</td>
+<td height="22" align="center" class="content">0</td>
+</tr>
+<tr><td height="22" align="left" class="content">Clare McQuillan</td>
+<td height="22" align="center" class="content">0.00</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">8</td>
+<td height="22" align="center" class="content">0</td>
+</tr>
+<tr><td height="22" align="left" class="content">Hannah Hazlett</td>
+<td height="22" align="center" class="content">0.00</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">10</td>
+<td height="22" align="center" class="content">0</td>
+</tr>
+<tr><td height="22" align="left" class="content">Sarah Louise Smith</td>
+<td height="22" align="center" class="content">0.00</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">11</td>
+<td height="22" align="center" class="content">0</td>
+</tr>
+<tr><td height="22" align="left" class="content">Sara Markun</td>
+<td height="22" align="center" class="content">0.00</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">13</td>
+<td height="22" align="center" class="content">0</td>
+</tr>
+<tr><td height="22" align="left" class="content">Jessica Baker</td>
+<td height="22" align="center" class="content">0.00</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">14</td>
+<td height="22" align="center" class="content">0</td>
+</tr>
+<tr><td height="22" align="left" class="content">Liu Hao</td>
+<td height="22" align="center" class="content">0.00</td>
+<td height="22" align="center" class="content">0</td>
+<td height="22" align="center" class="content">15</td>
+<td height="22" align="center" class="content">0</td>
+</tr>
+</tbody></table>
+    <br />
+    <table width="750" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+      <tr>
+        <td><img src="imgs/spacer.png" width="1" height="1" alt="spacer" /></td>
+      </tr>
+    </table>
+    <p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td height="30" colspan="2" align="right" bgcolor="#414141" class="BOLD"><p>&nbsp;</p>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="90%" align="right"> <p><a href="facebook.html">&lt; &lt; BACK</a></p></td>
+          <td align="left">&nbsp;</td>
+        </tr>
+      </table>
+   </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+    
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

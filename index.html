@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Owen Sims</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index, follow" />
+	<meta name="author" content="Owen Sims" />
+	<meta name="description" content="A website for Owen Sims." />
+	<meta name="keywords" content="Owen Sims, Owen, Sims, Networks, Social Networks, Economic Networks, Economics, Game Theory" />
+	<meta name="Resource-type" content="Document" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<style>
+
+	/* Style for header texts
+	* --------------------------------------- */
+	
+	a {
+		font-size: 12px;
+		font-family: Arial, Helvetica;
+		color: #148EB7;
+		margin: 0;
+	}
+	
+	art {
+		font-size: 36pt;
+		font-family: arial,helvetica;
+		color: #148EB7;
+		margin: 0;
+	}
+	
+	h1 {
+		font-size: 36pt;
+		font-family: arial,helvetica;
+		color: #414141;
+		margin: 0;
+	}
+
+	h2 {
+		font-size: 36pt;
+		font-family: arial,helvetica;
+		color: #FFF;
+		margin: 0;
+	}
+	
+	sub {
+		font-size: 13pt;
+		font-family: Arial, Helvetica;
+		color: #DDD;
+		margin: 0;
+	}
+	
+	p2 {
+		font-size: 13pt;
+		font-family: Arial, Helvetica;
+		color: #666;
+		margin: 0;
+	}
+	
+	p3 {
+		font-size: 16pt;
+		font-family: Arial, Helvetica;
+		color: #fefefe;
+		margin: 0;
+	}
+	
+	p4 {
+		font-size: 13pt;
+		font-family: Arial, Helvetica;
+		color: #ddd;
+		margin: 0;
+	}
+	
+	t2 {
+		font-size: 14px;
+		font-family: Arial, Helvetica;
+		color: #148EB7;
+		margin: 0;
+	}
+	
+	content {
+		font-size: 12px;
+		color: #414141;
+		font-family: Arial, Helvetica;
+		margin: 0;
+	}
+	
+	content2 {
+		font-size: 12px;
+		color: #fefefe;
+		font-family: Arial, Helvetica;
+		margin: 0;
+	}
+	
+	bold {
+		font-size: 12px;
+		color: #414141;
+		font-famil Arial, Helvetica;
+		font-weight: bold;
+		margin: 0;
+	}
+		
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align: center;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		color: #000;
+		background-image: url(imgs/23.jpg);
+		background-size: cover;
+		background-position: center bottom;
+		padding: 0% 0 0 0;
+	}
+	
+	#about{
+		background-image: url(imgs/tile-bkg.png);
+		background-repeat: repeat;
+		padding: 1% 0 0 0;
+	}
+
+	#research{
+		background-image: url(imgs/warhol.jpg);
+		background-size: cover;
+		background-position: center top;
+		padding: 1% 0 0 0;
+	}
+	
+	#projects{
+		background-image: url(imgs/underwater.jpg);
+		background-size: cover;
+		background-position: center bottom;
+		padding: 1% 0 0 0;
+	}
+	 	
+	/*Adding background for the slides
+	* --------------------------------------- */
+	/* #slide1,#slide2,#slide3{
+		background-image: url(imgs/warhol.jpg);
+		background-size: cover;
+		background-position: center top;
+		padding: 0% 0 0 0;
+	}
+
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header{
+		position: fixed;
+		height: 50px;
+		display: block;
+		width: 100%;
+		background-color: #FFF;
+		opacity: 0.6;
+		z-index: 9;
+		text-align: center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top: 0px;
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+    </style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="fullpage/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				menu: '#menu',
+				autoScrolling: false
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+<ul id="menu">
+	<li data-menuanchor="about"><a href="#about">About</a></li>
+	<li data-menuanchor="research"><a href="#research">Research</a></li>
+	<li data-menuanchor="projects"><a href="#projects">Projects</a></li>
+</ul>
+
+<div id="header">
+	<a href="index.html"><img src="imgs/imowensims2.png" align="right"></a>
+</div>
+
+
+
+<div id="fullpage">
+
+	<div class="section" id="section0">
+		<div class="intro">
+        	<h2><span style="background-color: #148EB7">&nbsp;For past, present, and future students&nbsp;</span></h2>
+            <sub><span style="background-color: #148EB7">&nbsp;SOCIAL &amp; ECONOMIC NETWORKS <img src="imgs/circle.gif" width="10" height="10" alt="circle" /> GAME THEORY <img src="imgs/circle.gif" width="10" height="10" alt="circle" /> DATA SCIENCE&nbsp;</span></sub>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+            <table align="center" width="400" border="0" cellspacing="0" cellpadding="0">
+            	<tr>
+            		<td width="133" align="center"><a href="https://www.facebook.com/sims.owen"><img src="imgs/fb.gif" alt="fb" width="25" height="44" /></a></td>
+            		<td width="133" align="center"><a href="https://twitter.com/superyayz"><img src="imgs/tw.gif" alt="twitter" width="53" height="44" /></a></td>
+            		<td width="134" align="center"><a href="http://arxiv.org/find/cs/1/au:+Sims_O/0/1/0/all/0/1"><img src="imgs/x.gif" alt="x" width="43" height="44" /></a></td>
+            	</tr>
+            </table>
+		</div>
+	</div>
+
+
+
+	<div class="section" id="about">
+		<div class="intro">
+            <p2>Hi!</p2>
+			<h1>I'M OWEN SIMS</h1>
+            <p>&nbsp;</p>
+        	<p>&nbsp;</p>
+        	<table align="center" width="780" border="0" cellspacing="0" cellpadding="0">
+  				<tr>
+    				<td align="left" width="417">
+    					<t2>About Owen Sims</t2>
+    					<p>&nbsp;</p>
+      					<bold>Life is about making connections. That's why I decided to study them.</bold>
+        				<p>&nbsp;</p>
+      					<content>Hello! I'm a PhD student and TA in <a href="http://http://www.qub.ac.uk/home/TheUniversity/AboutQueens/" target="new"> Queen's University Belfast</a> studying a combination of <a href="http://en.wikipedia.org/wiki/Network_science" target="new">network science</a> and <a href="http://en.wikipedia.org/wiki/Game_theory" target="new">game theory</a> applied to  problems such as contagion, competition, entrepreneurship, and power in networks. The methodology is primarily quantitative; specifically using set theory and statistics.
+						<p>&nbsp;</p>
+         				Apart from Econ, I enjoy technology, algroithm design, machine learning, UX and UI, photography, coffee and LOL'ing.</content>
+      					<p>&nbsp;</p>
+      					<t2>About owensims.co.uk</t2>
+					    <p>&nbsp;</p>
+      					<content>I used to build websites in my spare time before I began University. Many late nights were spent learning HTML, CSS, PHP, and Javascript... but I never really did anything with it. The intention is to add a 'teaching' tab, which will teach the basics of network science, game theory, and statistics applied to social sciences. It is going to take a long time to do, but it should be a great resource for all types of students across social sciences and computer science.</content>
+      				</td>
+    				<td width="51">&nbsp;</td>
+					<td width="307" align="center" valign="top">
+						<table width="300px" border="0" cellspacing="0" cellpadding="0">
+      						<tr>
+        						<td height="370" colspan="2" align="center" valign="middle" bgcolor="#414141"><img src="imgs/me.jpg" width="285" height="350" alt="me" /></td>
+      						</tr>
+      						<tr>
+        						<td height="32" align="center" >
+        							<table width="100%" height="67" border="0" cellpadding="0" cellspacing="0">
+          								<tr>
+            								<td width="15%" height="37" align="center" valign="middle"><img src="imgs/mail.gif" width="28" height="22" alt="mail" /></td>
+            								<td width="85%" align="left" valign="middle"><content>sims.owen@gmail.com</content></td>
+          								</tr>
+          								<tr>
+            								<td align="center" valign="middle"><img src="imgs/locale.gif" width="32" height="43" alt="locale" /></td>
+            								<td align="left" valign="middle"> <content>Belfast, United Knigdom</content></td>
+          								</tr>
+        							</table>
+        						</td>
+        						<td width="6%" align="center">&nbsp;</td>
+      						</tr>
+    					</table>
+    				</td>
+  				</tr>
+			</table>
+        </div>
+    </div>    
+    
+    
+    
+	<div class="section" id="research">
+  		<div class="slide" id="slide1">
+	  		<div class="intro">
+				<p4>Working papers and</p4>
+				<h2>RESEARCH</h2>
+				<p>&nbsp;</p>
+        		<p>&nbsp;</p> 
+		  		<table width="680" align="center" bgcolor="#148EB7" border="0" cellspacing="0" cellpadding="0">
+			  		<tr align="center" valign="middle">
+			    		<td width="50"></td>
+			    		<td width="580">
+			    			<p>&nbsp;</p>
+			    			<p4>&nbsp;</p4>
+			    			<p4>My reseach focuses on social and economic networks and game theory applied to contagion, vaccination, contestability, and entrepreneurship. Mostly formal, quantitative work in economics, sociology, and computer science.</p4>
+		          			<p>&nbsp;</p>
+		          			<p4>Swipe or click right to find some papers.</p4><br/><br/>
+                		</td>
+			    		<td width="50">&nbsp;</td>
+	        		</tr>
+	    		</table>
+			</div>
+		</div>
+
+
+		<div class="slide" id="slide2">
+			<a href="research/BuildingBlocks.pdf"><art><span style="background-color: #fefefe">&nbsp;Building Blocks: The Formation of Extractive Structures in Networks&nbsp;</span></art></a>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+		  		<tr>
+		    		<td width="250" height="335" rowspan="2" align="center" valign="middle" bgcolor="#414141"><a href="research/BuildingBlocks.pdf"><img src="imgs/blocks(jun2014).fw.png" width="213" height="299" alt="blocks" /></a></td>
+		    		<td width="40" rowspan="2" align="center" valign="middle">&nbsp;</td>
+		    		<td width="20" rowspan="2" align="center" valign="middle" bgcolor="#414141">&nbsp;</td>
+		    		<td height="250" colspan="2" align="left" valign="middle" bgcolor="#414141">
+	          			<content2>We extend the notion of middlemen to sets of extractive nodes, termed as blocks, which act as a collective middleman. We link the concept with a topological perspective of competition on networks - termed as 'network contestability'.<br><br>
+						A strategic-form non-cooprative game is derived in which players are endowed with positional attributes are incentivised to form either exploit their own position in the network or alternatively pursue the formation of a block with other players in the network. Blocks require consent and the power of a block is diseminated between all of its members. We charactrise the Strong Nash equilibrium, Nash equilibrium, and Monadic stability equilibrium of the game.<br><br>
+						(Last updated: July 2014)</content2><br/><br/>
+
+						<a href="research/BuildingBlocks-Pres.pdf"><content2><span style="background-color: #148EB7">&nbsp;Conference Presentation (PDF)&nbsp;</span></content2></a><br/>
+                        <td width="20" rowspan="2" valign="middle" bgcolor="#414141" class="blue2">&nbsp;</td>
+                        <tr>
+		    		<td height="30" align="right" valign="top" bgcolor="#414141"><a href="research/blocks.m"><content2><span style="background-color: #148EB7">&nbsp;Code for identifying blocks and measuring brokerage&nbsp;</span><br/>
+					<span style="background-color: #148EB7">&nbsp;(MATLAB)&nbsp;</span> </content2> </a>
+					</td>
+	      		</tr>
+                
+                        </td>
+	      		</tr>
+			</table>
+		</div>
+
+
+
+				<div class="slide" id="slide3">
+			<a href="research/CriticalNodes.pdf"><art><span style="background-color: #fefefe">&nbsp;Critical Nodes in Directed Networks&nbsp;</span></art></a>
+    		<p>&nbsp;</p>
+    		<p>&nbsp;</p>
+			<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+		  		<tr>
+		    		<td width="250" height="335" rowspan="2" align="center" valign="middle" bgcolor="#414141"><a href="research/CriticalNodes.pdf"><img src="imgs/criticalnodes(jan2014).fw.png" width="213" height="298" alt="criticalnodes" /></a></td>
+					<td width="40" rowspan="2" align="center" valign="middle">&nbsp;</td>
+					<td width="20" rowspan="2" align="center" valign="middle" bgcolor="#414141">&nbsp;</td>
+					<td height="250" colspan="2" align="left" valign="middle" bgcolor="#414141">
+          				<content2>The networked structure of exchange markets and the competition within those markets are important for the equilibrium price levels and profits generated by sets of nodes. We specifically investigate a topological perspective of competition in networks highlighting its duality with exploitation and so-called middlemen.<br/><br/>
+						We develop a brokerage measure on a directed graph and a corresponding algorithm that identifies strong and weak middlemen, and provides a value for their power, or <em>brokerage</em>, in the network.<br><br>
+						(Last updated: January 2014)</content2>
+					</td>
+					<td width="20" rowspan="2" valign="middle" bgcolor="#414141" class="blue2">&nbsp;</td>
+				</tr>
+				<tr>
+		    		<td height="30" align="right" valign="top" bgcolor="#414141" class="content2"><a href="research/mmtype.m">
+		    		<content2><span style="background-color: #148EB7">&nbsp;Code for identifying middlemen&nbsp;</span><br/>
+		      		<span style="background-color: #148EB7">&nbsp;(MATLAB)&nbsp;</span></content2></a>
+		      		</td>
+		    		<td width="231" align="right" valign="top" bgcolor="#414141"><a href="research/brokerage.m"><content2><span style="background-color: #148EB7">&nbsp;Code for measuring brokerage&nbsp;</span><br/>
+					<span style="background-color: #148EB7">&nbsp;(MATLAB)&nbsp;</span> </content2> </a>
+					</td>
+	      		</tr>
+    		</table>
+		</div>
+
+
+
+
+	</div>
+
+
+
+
+	<div class="section" id="projects">
+		<div class="slide" id="slide4"> 
+		<div class="intro">
+			<p4>Non-academic</p4>
+			<h2>PROJECTS I</h2>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<table align="center" width="780" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				  <td width="31%" align="center" valign="middle"><a href="retrospkt.html"><a href="banking.html"><img src="imgs/tedicon.png" alt="ted" width="217" height="103"></a></td>
+					<td width="3%">&nbsp;</td>
+					<td width="31%" align="bottom" valign="middle" height="275"><a href="pagerank.html"><img src="imgs/mony.gif" alt="money" width="239" height="221"></a></td>
+					<td width="3%">&nbsp;</td>
+					<td width="32%" align="center" valign="middle" height="275"><a href="social-structure-of-technology.html"><img src="imgs/ldnsv.png" width="248" height="238" alt="net"></a></td>
+				</tr>
+				<tr>
+				  <td align="left" valign="bottom"><img src="imgs/white.jpg" width="100%" height="1" alt="white"></td>
+					<td  height="1">&nbsp;</td>
+					<td align="left" height="1" valign="bottom"><img src="imgs/white.jpg" width="100%" height="1" alt="white"></td>
+					<td  height="1">&nbsp;</td>
+					<td align="left" height="1" valign="bottom"><img src="imgs/white.jpg" width="100%" height="1" alt="white"></td>
+				</tr>
+				<tr>
+				  <td width="31%" align="left" valign="center"><a href="banking.html">
+				    <p3>V. Banking 2.NO!</p3>
+				    </a></td>
+					<td width="3%">&nbsp;</td>
+					<td width="31%" align="left" valign="center"><a href="retrospkt.html"><a href="pagerank.html"><p3>IV. Google and Financial Crises (Part 1)</p3></a></td>
+					<td width="3%">&nbsp;</td>
+					<td width="32%" align="left" valign="center"><a href="social-structure-of-technology.html"><p3>I. Social Structure of Technology</p3></a></td>
+				</tr>
+				<tr>
+				  <td align="left" valign="top"><img src="imgs/white.jpg" width="100%" height="1" alt="white"></td>
+					<td  height="1">&nbsp;</td>
+					<td align="left" height="1" valign="top"><img src="imgs/white.jpg" width="100%" height="1" alt="white"></td>
+					<td  height="1">&nbsp;</td>
+					<td align="left" valign="top"  height="1"><img src="imgs/white.jpg" width="100%" height="1" alt="white"></td>
+				</tr>
+				<tr>
+				  <td align="left" valign="top"><content2>Can the recent technological revolution in finance save us from another collapse? I have been asked to give a TED talk about it.</content2></td>
+					<td>&nbsp;</td>
+					<td align="left" valign="top"><content2>Can Google be the key for containing the next global financial crisis? Kind of. We provide an analysis of PageRank and the financial system.</content2></td>
+					<td>&nbsp;</td>
+					<td align="left" valign="top"><content2>Reconstructing the social structure of technologists in Silicon Valley and Silicon Roundabout using Twitter data.</content2></td>
+				</tr>
+				<tr>
+				  <td align="left" valign="top"><img src="imgs/white.jpg" width="100%" height="1" alt="white"></td>
+					<td>&nbsp;</td>
+					<td align="left" valign="top"><img src="imgs/white.jpg" width="100%" height="1" alt="white"></td>
+					<td>&nbsp;</td>
+					<td align="left" valign="top"><img src="imgs/white.jpg" width="100%" height="1" alt="white"></td>
+				</tr>
+			</table>
+		</div>
+		</div>
+
+		<div class="slide" id="slide5"> 
+		<div class="intro">
+			<p4>Non-academic</p4>
+			<h2>PROJECTS II</h2>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<table align="center" width="780" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="31%" height="275" align="center" valign="middle"><a href="retrospkt.html"><img src="imgs/retro.gif" alt="retro"></a></td>
+					<td width="3%">&nbsp;</td>
+					<td width="31%" align="center" valign="middle"><a href="facebook.html"><img src="imgs/fbnet.gif" width="248" height="252" alt="fbnet"></a></td>
+					<td width="3%">&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td align="left" height="1" valign="bottom"><img src="imgs/white.jpg" width="100%" height="1" alt="white"></td>
+					<td  height="1">&nbsp;</td>
+					<td align="left" valign="bottom"><img src="imgs/white.jpg" width="100%" height="1" alt="white"></td>
+					<td  height="1">&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="31%" height="55" align="left" valign="center"><a href="retrospkt.html"><p3>II. Retrospkt</p3></a></td>
+					<td width="3%">&nbsp;</td>
+					<td width="31%" align="left" valign="center"><a href="facebook.html">
+					  <p3>III. Network Visualisation</p3>
+					  </a></td>
+					<td width="3%">&nbsp;</td>
+					<td width="31%"></td>
+				</tr>
+				<tr>
+					<td align="left" height="1" valign="top"><img src="imgs/white.jpg" width="100%" height="1" alt="white"></td>
+					<td  height="1">&nbsp;</td>
+					<td align="left" valign="top"><img src="imgs/white.jpg" width="100%" height="1" alt="white"></td>
+					<td  height="1">&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top"><content2>An app that attaches time-stamped memories to locations. Memories are embedded with KML files.</content2></td>
+					<td>&nbsp;</td>
+					<td align="left" valign="top"><content2>Created a Javascript application to scrape an individuals Facebook network and reconstruct it in an interactive graph.</content2></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top"><img src="imgs/white.jpg" width="100%" height="1" alt="white"></td>
+					<td>&nbsp;</td>
+					<td align="left" valign="top"><img src="imgs/white.jpg" width="100%" height="1" alt="white"></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</div>
+		</div>
+
+
+	</div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Owen Sims | Projects | Social Structure of Technology</title>
+	<meta name="Owen Sims"/>
+	<meta name="description" content="A website for Owen Sims." />
+	<meta name="Owen" "Sims"  content="fullpage,jquery,demo,screen,fullscreen,normal scroll,autoscrolling, scroll" />
+	<meta name="Resource-type" content="Document" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+
+	<link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	
+	a{
+		font-size:12px;
+		font-family:Arial, Helvetica;
+		color: #148EB7;
+		margin:0;
+	}
+	
+	art{
+		font-size: 36pt;
+		font-family: arial,helvetica;
+		color: #148EB7;
+		margin:0;
+	}
+	
+	date{
+		font-size: 13px;
+		font-family: Arial, Helvetica;
+		color: #D13024;
+		margin:0;
+	}
+	
+	h1{
+		font-size: 36pt;
+		font-family: arial,helvetica;
+		color: #414141;
+		margin:0;
+	}
+
+	h2{
+		font-size: 36pt;
+		font-family: arial,helvetica;
+		color: #FFF;
+		margin:0;
+	}
+	
+	sub{
+		font-size: 13pt;
+		font-family: Arial, Helvetica;
+		color: #DDD;
+		margin:0;
+	}
+	
+	p2{
+		font-size: 13pt;
+		font-family: Arial, Helvetica;
+		color: #666;
+		margin:0;
+	}
+	
+	p3{
+		font-size: 16pt;
+		font-family: Arial, Helvetica;
+		color: #fefefe;
+		margin: 0;
+	}
+	
+	p4{
+		font-size: 13pt;
+		font-family: Arial, Helvetica;
+		color: #ddd;
+		margin:0;
+	}
+	
+	t2 {
+		font-size: 14px;
+		font-family: Arial, Helvetica;
+		color: #148EB7;
+		margin:0;
+	}
+	
+	content {
+		font-size: 12px;
+		color: #414141;
+		font-family: Arial, Helvetica;
+		margin:0;
+	}
+	
+	subsection {
+		font-size: 14px;
+		color: #414141;
+		font-family: Arial, Helvetica;
+		margin:0;
+		font-weight:bold;
+	}
+	
+	content2 {
+		font-size: 12px;
+		color: #fefefe;
+		font-family: Arial, Helvetica;
+		margin:0;
+	}
+	
+	bold {
+		font-size: 12px;
+		color: #414141;
+		font-family:Arial, Helvetica;
+		font-weight:bold;
+		magin:0;
+	}
+		
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0{background-size:cover;
+	background-position:center;
+	background-position:bottom;
+	}
+	#section1{background-repeat:repeat;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		color: #000;
+		background-image: url(imgs/ldn.jpg);
+		background-position:center bottom;
+		padding: 0% 0 0 0;
+	}
+	
+	#section1{
+		background-image:url(imgs/tile-bkg.png);
+		padding: 0% 0 0 0;
+	}
+
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		background-color:#FFF;
+		opacity: 0.6;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+    .caption {	color: #FFF;
+	font-size: 12px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.content {	font-size: 10px;
+}
+.content {	font-size: 12px;
+}
+.content {	color: #0A0A0A;
+}
+.content {	color: #000;
+}
+.content {	color: #000000;
+}
+.content {	font-family: Verdana, Geneva, sans-serif;
+}
+.subsection {color: #4C9D97;
+}
+.subsection {color: #FE5246;
+}
+.subsection {color: #FE5246;
+}
+.subsection {	font-size: 14px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #000000;
+}
+.text {color: #414141;
+}
+.text {color: #414141;
+}
+.text {	color: #414141;
+	font-size: 14px;
+}
+    </style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="fullpage/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				menu: '#menu',
+				autoScrolling: false
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+
+
+<div id="header"><a href="index.html"><img src="imgs/imowensims2.png" align="center"></a></div>
+
+
+
+
+
+<div id="fullpage">
+  <div class="section" id="section0">
+		<div class="intro">
+        <p4><span style="background-color: #148EB7">&nbsp;Project I :&nbsp;</span></p4>
+        <h2><span style="background-color: #148EB7">&nbsp;Social Structure of Technology&nbsp;</span></h2><br/><br/><br/><a href="index.html#projects"><img src="imgs/projects.gif" width="151" height="32" id="backtoprojects" /></a>
+			</div>
+	</div>
+    
+    
+
+
+  <div class="section" id="section1">
+  			<div class="intro">
+  				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  				  <tr>
+  				    <td bgcolor="#35A9E1"><p>&nbsp;</p>
+			        <p><strong>TL;DR. </strong> Using Twitter data I find that the connectivity of technologists is different between Silicon Valley and Silicon Roundabout. Why? Is it good for entrepreneurship and SME's?</p>
+			        <p>&nbsp;</p></td>
+			      </tr>
+			  </table>
+  				<p>&nbsp;</p>
+  				<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+				  <tr>
+				    <td width="367" height="486" align="right" valign="middle"><table width="318" border="0" align="center" cellpadding="0" cellspacing="0">
+				      <tr>
+				        <td width="318" class="text"><content>I recently read a <a href="http://www.huffingtonpost.co.uk/sarah-wood/will-silicon-south-east-seize-the-digital-day_b_5521236.html?utm_hp_ref=tw" target="new">Huffington Post article</a> highlighting the gaining prominence of London as a technological hub. At first London seems like an unlikely candidate but, of course, there are not many major cities are <em>not</em> flaunting their future potential technological prowess. However, some important facts seem to be stacked in Londons favor. For one, London boasts one of the biggest financial sectors in the world and therefore has the financial specialists - especially in terms of private angel investors and venture capitalists - which have grown to specialise in technology start-ups over recent years. And for two, the Huff article highlights that London has recently overthrown the hegemon that is Silicon Valley, and California in general, in terms of the absolute number of people employed within the technology sector.</content><br/><br/><br/>
+				            <subsection>Economics 101</subsection><br/><br/>
+				          <content>Without being in any way scientific, let's first look at some <em>back-of-the-envelope</em> calculations and compare Silicon Valley's technological dominance to that of the so-called Silicon Roundabout in London. Let's first note that the GDP of the United Kingdom and that of California state are roughly equal to each other: the UK's GDP is $2.4 trillion and California's GDP is $2 trillion.</content></td>
+			          </tr>
+				      </table></td>
+				    <td width="12" align="right" valign="top">&nbsp;</td>
+				    <td width="421"><table border="0" cellspacing="0" cellpadding="0">
+				      <tr>
+				        <td colspan="3" align="center"><img src="imgs/fig1.gif" width="390" height="398" alt="fig1" /><br />
+				          <br /></td>
+			          </tr>
+				      <tr>
+				        <td width="10" height="24" bgcolor="#414141" class="captions">&nbsp;</td>
+				        <td width="364" bgcolor="#414141" align="left"><content2><strong>Fig 1 : </strong> A social network with multiple distinct communities.</content2></td>
+				        <td width="28" bgcolor="#414141" class="caption1">&nbsp;</td>
+			          </tr>
+				      </table></td>
+			      </tr>
+			  </table>
+          <table width="799" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td height="320" align="center" valign="top"><table width="750" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td valign="top"><content>A <a href="http://www.deloitte.com/view/en_gb/uk/63c6168038dbf310VgnVCM3000003456f70aRCRD.htm" target="new">2013 report by Deloitte</a> noted that London's technology, media, and telecoms (TMT) sector's contribution accounts for 8% of UK GDP, or $192 billion per year. <a href="http://www.siliconvalleycf.org/sites/default/files/publications/2014-silicon-valley-index.pdf" target="new">Another article</a> notes that Silicon Valley and San Fransisco's contribution to California's GDP was between 10% and 15%. Taking a relatively neutral figure of 12.5% it's calculated that the absolute figure for Silicon Valley's contribution is approximately $250 billion per year. </content>
+<content>On the face of it, the GDP generated from TMT in London is ~30% lower than that of Silicon Valley, and obviously even lower with respect to California state as a whole. Moreover, the number of technology patents in London were 60% lower than in the Greater Silicon Valley area in 2013, and again even lower with respect to California as a whole. Although London is indeed not a trivial force with respect to equating, or even surpassing, Silicon Valley's dominance, however it still has a long way to go when looking at the baseline economic indicators only.</content><br/><br/><br/>
+
+<subsection>Unanswered questions</subsection>
+<br/><br/>
+
+<content>As positive and exciting as the Huff article  reads regarding the future of London, I began to grow sceptical of the potential dominance of London in surpassing Silicon Valley (or even Route 128's Technology Corridor for that matter). In fact, while reading the article I thought that I had heard the same type of story before with regards to my neighbour capital <a href="http://www.gec.ie/news/dublin-europe%E2%80%99s-silicon-valley" target="new" class="atext">Dublin</a>. Specifically, there were a number of niggling questions at the back of my mind...</content><br/><br/>
+
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="4%" height="109" align="center" valign="top" class="text"><span class="content"><img src="imgs/dot.gif" width="12" height="14" alt="star" /></span></td>
+                        <td width="96%" valign="top"><content>How many jobs in Silicon Roundabout  are with transnational's that originate in other countries (including Silicon Valley)? And, therefore, how dependent is the functionality of London on the success of other regions and economies? <br/><br/> 
+                          An article last year by <a href="http://www.wired.co.uk/news/archive/2013-02/08/us-tech-expansion-into-eu" target="new" class="atext">Wired UK</a> noted that the big movers in London were in fact American tech companies: Google, Amazon, Salesforce, Microsoft, Facebook, Twitter, IBM, and even Yelp. Moreover, it is unlikely to see many tech firms that originated in London to be operating in Silicon Valley.<br/><br/>                        
+                        </content></td>
+                      </tr>
+                      <tr>
+                        <td height="57" align="center" valign="top" class="text"><span class="content"><img src="imgs/dot.gif" width="12" height="14" alt="star" /></span></td>
+                        <td valign="top"><content>How many of these jobs are truly <em>entrepreneurial</em>, i.e., developing products and services (hardware and software) that are significantly original; that are combining other technologies and solutions to solve new problems, and therefore how many of these jobs are <em>non-entrepreneurial</em>?</content><br/><br/>   
+                        
+                    </td>
+                      </tr>
+                      <tr>
+                        <td height="48" align="center" valign="top" class="text"><span class="content"><img src="imgs/dot.gif" width="12" height="14" alt="star" /></span></td>
+                        <td valign="top"><content>Is it really much of an achievement to have more people employed in technology in London noting that London has a population 10x larger than San Fransisco?</content><br/><br/>   
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="42" align="center" valign="top" class="text"><span class="content"><img src="imgs/dot.gif" width="12" height="14" alt="star" /></span></td>
+                        <td valign="top"><content>What does the social structure of London look like and will this help us figure out how connected, and therefore cohesive, the industry is?</content><br/><br/>   
+                        </td>
+                      </tr>
+                    </table>
+                    <content>The first three questions  can be debated and investigated in future discussions, here the social connectivity of London's tech scene versus the connectivity of Silicon Valley's is investigated. Before divulging I highlight that this is a work--in--progress and that the data provided here is a subset of the data that could (and should) be harvested!<br/><br/><br/></content>
+                    <subsection>Comparing social structures: the Roundabout and the Valley</subsection><br/><br/>
+                    
+                    <content> Two social networks of individuals are gathered. Each individual in each network is either involved with tech in London or with tech in Silicon Valley. An example of a social network is seen in <strong>Fig 1</strong> and consists of a set of <em>nodes</em> (individuals) and a set of <em>links</em> (friendships, followings, work relationships). The network in <strong>Fig 1</strong> is an example of a small-world network where there exists a short distance between any two nodes and there exists overlapping communities. <br />
+                      <br />
+                      Each network contains around 1,000 nodes and around 50,000 relationships. This population size was chosen specifically because my Macbook literally blew up when visualising 2,000 nodes (I'm working on this)! The network is derived from Twitter accounts where only relationships in which followings are reciprocated are considered. The reason we used reciprocated relationships is because there is a greater potential for the individuals to actually know each other, and are able to disseminate information, ideas, and therefore influence each other in some way. Relationships are scraped using a Python script and Twitters API, and with respect to the geolocation of each user, i.e., only users that announce that they live in London/Silicon Valley will be considered, and furthermore only Twitter users that announce that they are in tech (in some way) are considered... it is a long process to sort the data effectively hence the incomplete dataset!</content><br/><br/>
+                      
+                    <content>The networks are shown in <strong>Fig 2</strong> below and are generated with the open source visualisation software <a href="https://gephi.github.io/" target="new">Gephi</a>. The analysis of the networks are split into a 'macroscopic' analysis and a 'microscopic' analysis. The macroscopic analysis  investigates the topology of the network in terms of the composition of the links, then derived features such as the <em>density</em> of each network, the <em>diameter</em> of each network, and the <em>modularity</em> (or clustering) of each network. The microscopic analysis takes into consideration the centralities of each node in both networks.</content><br/><br/><br/>
+                </td>
+                </tr>
+                <tr>
+                  <td><img src="../images/spacer.png" width="1" height="2" alt="spacer" /></td>
+                </tr>
+                <tr>
+                  <td align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td height="470" align="center"><br />
+                            <img src="imgs/fig2.gif" width="740" height="381" alt="fig2" /><br />
+                        <br />
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="3%" height="38" bgcolor="#414141">&nbsp;</td>
+                            <td width="94%" bgcolor="#414141" align="left"><content2><strong>Fig 2 : </strong> A comparison between the social structure of technologists in London (left) and Silicon Valley (right) using reciprocated Twitter followings as a proxy. Communities are coloured and nodes are sized by their relative degree.</content2></td>
+                            <td width="3%" bgcolor="#414141" class="caption">&nbsp;</td>
+                          </tr>
+                        </table>
+                        <span class="content"><br />
+                        </span></td>
+                    </tr>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td><span class="content"><img src="../images/spacer.png" width="1" height="2" alt="spacer" /></span></td>
+                </tr>
+                <tr>
+                  <td><p>&nbsp;</p>
+                    <subsection>Macroscopic Analysis</subsection><br/><br/>
+                    
+                      <content><strong>Degrees.</strong> The size of each node represents its <em>degree</em> (the number of its links) and the colour of each node refers to its modularity class, i.e, what community the node is a member of. Besides the colours, the topologies of the networks are remarkably different. In terms of each networks degree distributions, both networks loosely follow a typical <em>power law</em> whereby there exists a small number of individuals that have a disproportionately large number of links in the network and there exists a large number of individuals that have a relatively small number of links in the network, similar to an <a href="http://en.wikipedia.org/wiki/Barab%C3%A1si%E2%80%93Albert_model" target="new">Albert-Barabasi graph</a>. This is to say that both network contain nodes that act as &quot;<em>hubs</em>&quot;.</content><br/><br/>
+                      
+                    <content><strong>
+                      Network Density and Diameter.</strong> On average nodes have a larger number of links (reciprocated followings) in Silicon Valley as compared to Silicon Roundabout; in fact on average nodes have 35% more connections in SV than SR. This contributes to each networks density. The social network of Silicon Valley is more dense than that of London: the density of Silicon Valley is 2% whereas the density of Silicon Roundabout is 0.9%.</content><br/>
+                    <content>The diameter of a network corresponds to the longest shortest path between any two nodes in the network. For example, a network with a diameter of 1 means that all nodes are connected to each other, and a network with a longer diameter means that there must exist more intermediaries between at least two nodes. The density of a network is inversely related to the network diameter.</content><br/>
+                     <content>In London there exists a network diameter of 9 compared to Silicon Valley's diameter of 4. This implies that  the diffusion of information and ideas from any one node to any other takes more layers of intermediation in London than Silicon Valley. Due to this intermediation, good ideas may die out or may simply not reach the people needed to operationalise it.</content><br/><br/>
+                     
+                     <content><strong>Modularity.</strong> The colours of the nodes in the networks correspond to the modules that each node is a part of. Simply from analysing the colours of the graphs, the network in London has a more modular structure meaning that relatively small clusters of nodes are well-connected with each other (dense), however the network as a whole is relatively sparse, hence the small overall network density. The modularity score is ~0.743 in London using <a href="http://en.wikipedia.org/wiki/Modularity_(networks)" target="new">Newman's modularity metric</a>.<br/><br/>
+                      
+                      The network in Silicon Valley is less modular in that there exists a very distinctive core-periphery structure that is not evident from London's network. In simple terms, there is evidence of a greater number of so-called '<em>super-connectors</em>': individuals with a disproportionately high degree (number of links) in the network that liaise between modules and between otherwise disconnected individuals.</content><br/>
+                    <content>Both networks contain individuals that could be considered as hubs: nodes that have disproportionately more links than all other nodes in the network. However, the connectivity of the hubs are different in different networks. Specifically, in Silicon Roundabout hubs tend to be within a given component, or cluster, as opposed to between components and therefore the network as a whole. From the neuroscience literature, the type of hubs that exist in Silicon Roundabout are termed as 'provincial hubs'. Conversely, in Silicon Valley hubs exist but they span many individuals across multiple components and therefore reduce the overall modularity that exists in the network. The hubs that exist in Silicon Valley are typically termed as 'connector hubs' since their relationships span otherwise disconnected communities and are equivalent to the super-connectors.<br/><br/>
+                    
+                    An important question to ask is: how and why does this modularity differential arise? It's difficult to answer this question with the data at the minute. However, I could hazard a guess and suggest a number of potential reasons.<br/>
+                    
+                      First is population the of London and the lack of uniting institutions. As the population of communities grow they naturally become more sparse, and this is further exacerbated if there is a lack of social/economic institutions (or 'foci') that brings the community together. Coffee houses and Universities were renowned for providing this function in Silicon Valley: problems were addressed and ideas were discussed and disseminated.<br/>
+                      Second, although there exists a growing level of entrepreneurship in London, much of London's tech scene is based on already established firms and institutions developing new operations, or forming new operations in London as opposed to simply a product of well-connected entrepreneurs. Indeed, a denser and smaller-world network may signal a product of, and a basis for, entrepreneurial activity. The establishment of firms, combined with a lack of institutions developed to provide a platform for cooperation, may lead to a more insular social structure in which individuals form and strengthen connections inward as opposed to with individuals across different firms and industries.<br/><br/>
+                    It may be that the modularity and overall topology that we see in London is a sign of a relatively juvenile tech area, at that it will evolve to become more like Silicon Valley, especially with the formation of institutions specifically targeted to bring together technologists and potential entrepreneurs.</content><br/><br/><br/>
+                        <subsection>Microscopic Analysis</subsection><br/><br/>
+                    <content><strong>Betweenness Centrality.</strong> The modularity of the network is further highlighted by the betweenness centrality of each node. The betweenness centrality refers to the number of shortest paths from all nodes to all others that pass through that node. <strong>Fig 3</strong> below highlights the betweenness centrality of each node. Here, larger nodes are nodes that have a higher betweenness centrality (all centralities are relative) and nodes that have a relatively higher degree are more blue.</content>
+                    <p>&nbsp;</p></td>
+                </tr>
+                <tr>
+                  <td><span class="content"><img src="../images/spacer.png" width="1" height="2" alt="spacer" /></span></td>
+                </tr>
+                <tr>
+                  <td height="368" align="center"><img src="imgs/fig3.gif" width="739" height="385" alt="fig3" /><br />
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="3%" height="38" bgcolor="#414141">&nbsp;</td>
+                        <td width="94%" bgcolor="#414141"><content2><strong>Fig 3 :</strong> A comparison between the social structure of technologists in London (left) and Silicon Valley (right) using with respect to betweenness centralities.</content2></td>
+                        <td width="3%" bgcolor="#414141" class="caption">&nbsp;</td>
+                      </tr>
+                    </table>
+                    <span class="content"><br />
+                    </span></td>
+                </tr>
+                <tr>
+                  <td><img src="../images/spacer.png" width="1" height="2" alt="spacer" /></td>
+                </tr>
+                <tr>
+                  <td><p>&nbsp;</p>
+                    <content>Obviously there is a direct correlation between nodes that have a high degree and nodes that have a high betweenness centrality. More specifically, nodes that are connector hubs will have a higher betweenness centrality than nodes that may have a higher degree, but are more provincial.</content><br/><br/>
+                    <content>In London there exist less nodes that are connector hubs and therefore have a high betweenness centrality in the network relative to Silicon Valley. In fact, hubs in Silicon Valley seem to form a so-called '<a href="http://www.cabdyn.ox.ac.uk/complexity_PDFs/ECCS06/Conference_Proceedings/PDF/p124.pdf" target="new">rich club</a>', i.e, connector hubs that are tightly connected to each other.</content><br/><br/><br/>
+                    
+                    <subsection>Concluding comments</subsection><br/><br/>
+                    <content>The social structure of both London and Silicon Valley remain dissimilar. Specifically, by looking at the structure alone, London seems to be more disconnected, less cohesive, and more modular than the social structure of Silicon Valley. This lack of cohesion may be because of relative lack of entrepreneurship, a relative lack of social and economic foci, and/or the relative youth of the London tech scene. Further still, London's structure may not be conducive to further entrepreneurship without institutions that specifically connect the division of labour.<br/><br/>
+                    
+                    The analysis has it's drawbacks which need to be resolved over time. First, we only look at Twitter the data could be complimented from LinkedIn. Moreover, we need a bigger dataset... we realistically can't say much with only 1000 nodes from each industry! Second, more of an institutional analysis needs to be made. What are the institutions that bring individuals together? Third, the analysis could benefit from more measures... but c'mon it's been a long few days! </content><br/><br/><br/>
+                    <subsection>More to come soon!</subsection></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table>
+              
+				<p>&nbsp;</p>
+  </div>
+</div>
+
+
+
+
+  
+</div>
+
+
+
+
+</body>
+</html>

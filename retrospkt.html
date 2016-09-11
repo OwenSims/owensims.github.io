@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Owen Sims | Projects | Retrospkt</title>
+	<meta name="Owen Sims"/>
+	<meta name="description" content="A website for Owen Sims." />
+	<meta name="Owen" "Sims"  content="fullpage,jquery,demo,screen,fullscreen,normal scroll,autoscrolling, scroll" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	
+	a{
+		font-size:12px;
+		font-family:Arial, Helvetica;
+		color: #148EB7;
+		margin:0;
+	}
+	
+	art{
+		font-size: 36pt;
+		font-family: arial,helvetica;
+		color: #148EB7;
+		margin:0;
+	}
+	
+	date{
+		font-size: 13px;
+		font-family: Arial, Helvetica;
+		color: #D13024;
+		margin:0;
+	}
+	
+	h1{
+		font-size: 36pt;
+		font-family: arial,helvetica;
+		color: #414141;
+		margin:0;
+	}
+
+	h2{
+		font-size: 36pt;
+		font-family: arial,helvetica;
+		color: #FFF;
+		margin:0;
+	}
+	
+	sub{
+		font-size: 13pt;
+		font-family: Arial, Helvetica;
+		color: #DDD;
+		margin:0;
+	}
+	
+	p2{
+		font-size: 13pt;
+		font-family: Arial, Helvetica;
+		color: #666;
+		margin:0;
+	}
+	
+	p3{
+		font-size: 16pt;
+		font-family: Arial, Helvetica;
+		color: #fefefe;
+		margin: 0;
+	}
+	
+	p4{
+		font-size: 13pt;
+		font-family: Arial, Helvetica;
+		color: #ddd;
+		margin:0;
+	}
+	
+	t2 {
+		font-size: 14px;
+		font-family: Arial, Helvetica;
+		color: #148EB7;
+		margin:0;
+	}
+	
+	content {
+		font-size: 12px;
+		color: #414141;
+		font-family: Arial, Helvetica;
+		margin:0;
+	}
+	
+	subsection {
+		font-size: 14px;
+		color: #414141;
+		font-family: Arial, Helvetica;
+		margin:0;
+		font-weight:bold;
+	}
+	
+	content2 {
+		font-size: 12px;
+		color: #fefefe;
+		font-family: Arial, Helvetica;
+		margin:0;
+	}
+	
+	bold {
+		font-size: 12px;
+		color: #414141;
+		font-family:Arial, Helvetica;
+		font-weight:bold;
+		magin:0;
+	}
+		
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0{background-size:cover;
+	background-position:center;
+	background-position:bottom;
+	}
+	#section1{background-repeat:repeat;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		color: #000;
+		background-image: url(imgs/inf.gif);
+		background-position:center;
+		padding: 0% 0 0 0;
+	}
+	
+	#section1{
+		background-image:url(imgs/tile-bkg.png);
+		padding: 0% 0 0 0;
+	}
+
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		background-color:#FFF;
+		opacity: 0.6;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+    .caption {	color: #FFF;
+	font-size: 12px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.content {	font-size: 10px;
+}
+.content {	font-size: 12px;
+}
+.content {	color: #0A0A0A;
+}
+.content {	color: #000;
+}
+.content {	color: #000000;
+}
+.content {	font-family: Verdana, Geneva, sans-serif;
+}
+.subsection {color: #4C9D97;
+}
+.subsection {color: #FE5246;
+}
+.subsection {color: #FE5246;
+}
+.subsection {	font-size: 14px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #000000;
+}
+.text {color: #414141;
+}
+.text {color: #414141;
+}
+.text {	color: #414141;
+	font-size: 14px;
+}
+    .content1 {	font-size: 10px;
+}
+.content1 {	font-size: 12px;
+}
+.content1 {	color: #0A0A0A;
+}
+.content1 {	color: #000;
+}
+.content1 {	color: #000000;
+}
+.content1 {	font-family: Osaka;
+}
+.content1 {	font-family: Verdana, Geneva, sans-serif;
+}
+.text1 {color: #414141;
+}
+.text1 {color: #414141;
+}
+.text1 {	color: #414141;
+	font-size: 12px;
+}
+    .atext {	color: #D13024;
+}
+    </style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="fullpage/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				menu: '#menu',
+				autoScrolling: false
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+
+
+<div id="header"><a href="index.html"><img src="imgs/imowensims2.png" align="center"></a></div>
+
+
+
+
+
+<div id="fullpage">
+  <div class="section" id="section0">
+		<div class="intro">
+        <p4>Project II : </p4>
+        <h2>Retrospkt</h2><br/><br/><br/>
+        <a href="index.html#projects"><img src="imgs/projects.gif" alt="backtoprojects" width="151" height="32" id="backtoprojects" /></a></div>
+	</div>
+    
+    
+
+
+  <div class="section" id="section1">
+  			<div class="intro">
+  				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  				  <tr>
+  				    <td bgcolor="#35A9E1"><p>&nbsp;</p>
+			        <p><strong>TL;DR: </strong> A review of the first app I ever made. <br>
+			          It was awful and awesome at the same time.</p>
+			        <p>&nbsp;</p></td>
+			      </tr>
+			  </table>
+  				<p>&nbsp;</p>
+			  <table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+  				  <tr>
+  				    <td width="367" height="422" align="right" valign="middle"><table width="318" border="0" align="center" cellpadding="0" cellspacing="0">
+  				      <tr>
+  				        <td width="318"><content>Social relations have existed since the dawn of time. No living organism has ever lived  void of any influnce from another. We are bound in this world by both direct and indirect forces from each other. Our relations make us us, they are the reason for human prosperity, they are the foundation and the outcome of the division of labour that brings us the things we use everyday.</content><br/><br/><br/>
+  				          <subsection>We are all connected</subsection><br/><br/>
+  				          <content>It is then obvious that as the internet came of age online social networks would become an extension of society, allowing us to database everyone who we have ever met and anything that has ever shaped our lives.<br/><br/>
+  				          However, Facebook, Twitter, and G+ have been around for a while now. The question, which is constantly going through peoples heads is... &quot;<em>what's next? </em>&quot;. Well, I for one have no idea... and if I did I probably wouldn't post it up for all to see! Typically, new successful apps - like Tinder, Soundcloud, Spotify, and Jelly - use FB, Twitter, and G+ as a platform in which to build on. The social network is there already, what's the point in trying to recreate it?</content><br/><br/></td>
+			          </tr>
+				      </table></td>
+  				    <td width="12" align="right" valign="top">&nbsp;</td>
+  				    <td width="421" valign="middle">
+  				      <table width="400" border="0" cellpadding="0" cellspacing="0" valign="middle">
+  				        <tr>
+  				          <td width="410" height="353" align="center"><img src="imgs/logor.gif" width="354" height="325" alt="logor" /><br />
+  				            <br /></td>
+			            </tr>
+			          </table>
+  				      <table width="400" border="0" cellspacing="0" cellpadding="0">
+  				        <tr>
+  				          <td width="16" height="23" bgcolor="#414141">&nbsp;</td>
+  				          <td width="384" align="left" bgcolor="#414141"><content2><strong>Fig 1 :</strong> Illustrating the essence of Retrospekt.</content2></td>
+			            </tr>
+			          </table>
+  				      <br /></td>
+		        </tr>
+			  </table>
+			  <table width="799" border="0" align="center" cellpadding="0" cellspacing="0">
+			    <tr>
+			      <td height="320" align="center" valign="top"><table width="750" border="0" cellspacing="0" cellpadding="0">
+			        <tr>
+			          <td valign="top"><content>In this project, I'm going to begin to talk about an app which I probably should have finished (Matt, if you wanna finish this for me then plzzz) and started life as &quot;Reminisce&quot;, then &quot;Nostalga&quot;, the &quot;Reflect&quot;, then &quot;Retrospkt&quot;... all in the space of one conversation. Thinking back, it's kind of a dumb idea, but whatever...<br/><br/>
+			            Retrospkt (like 'Retrospect' ... geddit?! With a '<em>k</em> ') was the first app idea I took seriously when I was in my undergrad. The idea was super simple. Retrospkt was a social network in which the actual interactive platform was the Earth and posts were essentially written as <a href="http://en.wikipedia.org/wiki/Keyhole_Markup_Language" target="new">.KML files</a> and tagged on the earth. Users could tag the Earth at a specific location with a life event, &quot;<em>Got married @ nnn</em>&quot;, &quot;<em>Moved to @ yyy</em> &quot;, &quot;<em>Had the best Hotdog I ever had @ xxx </em>&quot;... well the &quot;<em>xxx </em>&quot; here is obviously going to be <a href="http://www.halloberlinrestaurant.com/" target="new">Hallo Berlin German Food Stand</a> in Midtown Manhatten. The best hotdogs. Just ask for the <em>Dictator Special</em>, and keep it between you and me. The only thing worth doing in NYC. Seriously.<br/><br/>
+			            Following Twitter, each memory is short (140-ish characters). When you tag a certain spot with a &quot;memory&quot; it gets timestamped and can be linked to other &quot;memories&quot; you or others have made. You also have the option of uploading pictures and videos to the memory and to specifically refer certain people to certain places, or even refer random people in the vacinity. Users can follow either other peoples' memories or follow specific places and the memories that come from that.</content><br/><br/>
+			            <content>The &quot;retrospective&quot; part of the application is based on the timeline. With Retrospkt you had the ability to <em>rewind the world</em> - literally spin the world back a week, month, a year, whatever to certain places and see what memories were being created at certain times, what relationships were being made, and see when other people found out that Hallo Berlin was indeed the greatest place in the world to get a hotdog... and it's always worth the 20 minute wait. I'd personally wait 20 years.</content><br/><br/><br/>
+			            <subsection>Tracking society</subsection><br/><br/>
+			            <content>So, some nice things can be done with large-scale, global data. Not only can <a href="http://www.wired.com/2010/10/twitter-crystal-ball/" target="new">Twitter be used to predict fluctuations in the Stock Market</a>, but also scientists in NEU have found that Twitter can be used to measure the <a href="http://www.ccs.neu.edu/home/amislove/twittermood/" target="new">mood of society</a>, which is then intrinsically (although weakly) connected to the stability of financial systems. See <strong>Fig 2</strong>. It may be interesting to see when and where memories are created and also where is the best place to get a hotdog. Only the serious issues here please.</content><br /><br/>
+			            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			              <tr>
+			                <td height="361" align="center"><table width="500" border="0" cellspacing="0" cellpadding="0">
+			                  <tr>
+			                    <td width="560"><iframe width="560" height="315" src="http://www.youtube.com/embed/ujcrJZRSGkg" frameborder="0" allowfullscreen></iframe></td>
+		                      </tr>
+			                  <tr>
+			                    <td>&nbsp;</td>
+		                      </tr>
+			                  </table>
+			                  <table width="560" border="0" cellspacing="0" cellpadding="0">
+			                    <tr>
+			                      <td width="16" height="23" bgcolor="#414141">&nbsp;</td>
+			                      <td width="384" valign="middle" bgcolor="#414141"><content2><strong>Fig 2 :</strong> How mood changes throughout the day in USA.</content2></td>
+		                        </tr>
+		                      </table></td>
+		                  </tr>
+		                </table>
+			            <br/><content>Stupid ideas aside, possibly the biggest drawback of this app (apart from needing to get a critical mass to take off, like all social platforms with UGC) comes from what I like to call &quot;<em>The Asshole Problem </em>&quot;. Indeed, there's only a matter of time before users upload pictures of their genitals as a &quot;memory&quot; on top of the Eiffel Tower and tag it 'Ni**as in Paris' or something...<br/><br/>
+			            It's great that we're all connected, but sometimes it's also super unfortunate.</content>
+			        </td>
+		            </tr>
+			        <tr>
+			          <td><span class="content1"><img src="../images/spacer.png" width="1" height="2" alt="spacer" /></span></td>
+		            </tr>
+			        <tr>
+			          <td align="left"><p>&nbsp;</p></td>
+		            </tr>
+			        </table></td>
+		        </tr>
+		      </table>
+  				<p>&nbsp;</p>
+  </div>
+</div>
+
+
+
+
+  
+</div>
+
+
+
+
+</body>
+</html>

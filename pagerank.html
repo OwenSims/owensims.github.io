@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Owen Sims | Projects | Google and Financial Crises (Part 1)</title>
+	<meta name="Owen Sims"/>
+	<meta name="description" content="A website for Owen Sims." />
+	<meta name="Owen" "Sims"  content="fullpage,jquery,demo,screen,fullscreen,normal scroll,autoscrolling, scroll" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	
+	a{
+		font-size:12px;
+		font-family:Arial, Helvetica;
+		color: #148EB7;
+		margin:0;
+	}
+	
+	art{
+		font-size: 36pt;
+		font-family: arial,helvetica;
+		color: #148EB7;
+		margin:0;
+	}
+	
+	date{
+		font-size: 13px;
+		font-family: Arial, Helvetica;
+		color: #D13024;
+		margin:0;
+	}
+	
+	h1{
+		font-size: 36pt;
+		font-family: arial,helvetica;
+		color: #414141;
+		margin:0;
+	}
+
+	h2{
+		font-size: 36pt;
+		font-family: arial,helvetica;
+		color: #FFF;
+		margin:0;
+	}
+	
+	sub{
+		font-size: 13pt;
+		font-family: Arial, Helvetica;
+		color: #DDD;
+		margin:0;
+	}
+	
+	p2{
+		font-size: 13pt;
+		font-family: Arial, Helvetica;
+		color: #666;
+		margin:0;
+	}
+	
+	p3{
+		font-size: 16pt;
+		font-family: Arial, Helvetica;
+		color: #fefefe;
+		margin: 0;
+	}
+	
+	p4{
+		font-size: 13pt;
+		font-family: Arial, Helvetica;
+		color: #ddd;
+		margin:0;
+	}
+	
+	t2 {
+		font-size: 14px;
+		font-family: Arial, Helvetica;
+		color: #148EB7;
+		margin:0;
+	}
+	
+	content {
+		font-size: 12px;
+		color: #414141;
+		font-family: Arial, Helvetica;
+		margin:0;
+	}
+
+	em {
+		font-size: 12px;
+		color: #414141;
+		font-family: Arial, Helvetica;
+		font-style: italic;
+		margin:0;
+	}
+	
+	subsection {
+		font-size: 14px;
+		color: #414141;
+		font-family: Arial, Helvetica;
+		margin:0;
+		font-weight:bold;
+	}
+	
+	content2 {
+		font-size: 12px;
+		color: #fefefe;
+		font-family: Arial, Helvetica;
+		margin:0;
+	}
+	
+	bold {
+		font-size: 12px;
+		color: #414141;
+		font-family:Arial, Helvetica;
+		font-weight:bold;
+		magin:0;
+	}
+		
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0{background-size:cover;
+	background-position:center bottom;
+	}
+	#section1{background-repeat:repeat;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		color: #000;
+		background-image: url(imgs/wall.jpg);
+		background-position:center bottom;
+		padding: 0% 0 0 0;
+	}
+	
+	#section1{
+		background-image:url(imgs/tile-bkg.png);
+		padding: 0% 0 0 0;
+	}
+
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		background-color:#FFF;
+		opacity: 0.6;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+    .caption {	color: #FFF;
+	font-size: 12px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.content {	font-size: 10px;
+}
+.content {	font-size: 12px;
+}
+.content {	color: #0A0A0A;
+}
+.content {	color: #000;
+}
+.content {	color: #000000;
+}
+.content {	font-family: Verdana, Geneva, sans-serif;
+}
+.subsection {color: #4C9D97;
+}
+.subsection {color: #FE5246;
+}
+.subsection {color: #FE5246;
+}
+.subsection {	font-size: 14px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #000000;
+}
+.text {color: #414141;
+}
+.text {color: #414141;
+}
+.text {	color: #414141;
+	font-size: 14px;
+}
+    </style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="fullpage/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				menu: '#menu',
+				autoScrolling: false
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+
+
+<div id="header"><a href="index.html"><img src="imgs/imowensims2.png" align="center"></a></div>
+
+
+
+
+
+<div id="fullpage">
+  <div class="section" id="section0">
+		<div class="intro">
+        <p4><span style="background-color: #35A9E1">&nbsp;Project IV :&nbsp;</span></p4>
+        <h2><span style="background-color: #35A9E1">&nbsp;Google and Financial Crises&nbsp;<br/>&nbsp;(Part 1)&nbsp;</span></h2><br/><br/><br/><a href="index.html#projects"><img src="imgs/projects.gif" width="151" height="32" id="backtoprojects" /></a>
+			</div>
+	</div>
+    
+    
+
+
+  <div class="section" id="section1">
+  			<div class="intro">
+  				<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+  				  <tr>
+  				    <td bgcolor="#35A9E1">
+                    <p>&nbsp;</p>
+			        <p><strong>TL;DR. </strong> Can Google's PageRank measure be used to highlight and stop global financial contagions? Not in its raw form. In fact, in its raw form it could make things worse! But not all hope is lost...<p>&nbsp;</p></p></td>
+			      </tr>
+			  </table>
+  				<p>&nbsp;</p>
+			  <table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="left"><p>&nbsp;</p>
+              <content>Google can do no wrong in my eyes. Apart from that Google+ integration into YouTube --- that was horrendous. Anyway, from <a href="http://en.wikipedia.org/wiki/Google_driverless_car" target="new">self--driving cars</a> to <a href="http://www.google.com/loon/" target="new">wifi in weather balloons</a>, and from <a href="http://www.independent.co.uk/life-style/gadgets-and-tech/google-licenses-smart-contact-lens-technology-to-help-diabetics-and-glasses-wearers-9607368.html" target="new">contact lenses that measure glucose levels and diabeties</a> to being every students' best friend when it comes to all--nighter essay writing, Google has been at the top of its game. In 16 short years (<a href="https://www.google.co.uk/search?q=when+was+google+created&oq=when+was+googl&aqs=chrome.2.69i57j0l5.8006j0j4&sourceid=chrome&es_sm=119&ie=UTF-8" target="new">almost to the day</a>) it really has become the backbone of our civilisation. Can it do even more than everyone thought it could do? Could it have the key to saving our economic world?<br/>
+                <br/>
+
+	The overarching question I ask here is: "Can Google's PageRank measure be used to stop global financial contagions?" By "<em>Google PageRank</em> " I don't mean Google search results or its Zeitgeist (although, using those would be interesting too). Instead I mean the actual algorithm Google uses to sort and display search results in terms of each results' relevance to the search query.<br/><br/>
+
+	The overarching question is pretty odd. What does a search algorithm have to do with financial folly through something like subprime mortgage provision? Nothing. So, how could Google's PageRank be used to stop financial crises spreading from one bank to the other, from one business to the other, and from one economy to the other? Well, I think PageRank might be a stepping--stone to being able to do this. However, in order to answer this we need to understand what exactly PageRank is, what it does, and where it can be applied. Without spoiling The answer has something to do with networks... obviously!</content><br/><br/><br/><br/>
+
+    
+    <subsection>Why?</subsection><br/><br/>
+    
+    <content>Before we even try to answer the overarching question we should probably ask "why bother looking at this?". Since the topics are so unrelated it seems like a pretty stupid question...<br/>
+      <br/>
+	
+	In 2008, after the collapse of the investment bank Lehman Brothers, Governments' across the world participated in bailling out their largest financial institutions. This immediately led to billions of dollars (pounds Sterling, euro whatever currency) worth of tax--payers money being transferred to initiatives, such as the Troubled Asset Relief Program (TARP), to purchase bad debt from institutions that poorly lent to borrowers. The result was a more consolidated financial sector, cartel formation and LIBOR fixing, a lengthy bout of recesson, and a schizophrenic recovery. It has been argued by many whether the actions conducted by Governments were in the best interest of society, or whether their actions and policies favoured the interests of large financial institutions. Moreover, it has been argued that the use and distribution of taxpayers money was inefficient.<br/><br/>
+
+	If we can develop a measure to sort financial institutions in terms of their impact to the stablity of the network as a whole then perhaps we could make the bailing out process more efficient and stop the problems with the financial system before they escalate. Figuring out whether PageRank can be used to measure the relative importance of financial institutions could be extremely important!<br/><br/><br/><br/>
+    
+	<subsection>Understanding PageRank</subsection><br/><br/>
+	
+    In network terms it is a measure of "<a href="http://en.wikipedia.org/wiki/Centrality" target="new">centrality</a>". The centrality of a node in a network is a measure that indicates the importance of a node in terms of some characteristic, which is typically associated with the nodes' degree (how many arcs or links it has in the network). There are a host of different centrality measures that make use of different characteristics. The most famous is PageRank developed by Sergey Brin and Larry Page (founders of Google Inc.), even though it is basically just the same as many others including the <a href="http://www.sciencedirect.com/science/article/pii/S0378873300000198" target="new">beta--measure</a> developed by Gilles and Van den Brink who completely axiomatised the measure.<br/><br/>
+        
+    In its simplest form, the Wolrd Wide Web (WWW) can be projected as a directed network: webpages are represented as nodes and there is an arc from one node, <img src="imgs/i.gif" alt="i">, to another, <img src="imgs/j.gif" alt="j">, if there exists a hyperlink from page <img src="imgs/i.gif" alt="i"> to page <img src="imgs/j.gif" alt="j">. When the WWW is projected in this way centrality measures are used by search engines to rank websites and provide more accurate search results, irrespective of the contextual nature of the search string.<br/><br/>
+		
+	Moreover, the structure of the WWW shares the same properties as many other networks, such as social networks, neural networks, e--mail and messaging conversations, protein, metabolic, and cancer cells, and economic / financial networks, which is very useful for this article! Indeed, it seems that the stucture (or topology) of all complex systems evolve a number of distinct properties:</content><br/><br/>
+   
+     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="7%" align="right" valign="top"><content><strong>(1)</strong></content></td>
+          <td width="3%">&nbsp;</td>
+          <td width="90%" valign="top"><content>The average distance (measured by shortest path length) between pairs of nodes in a social network tends to be small, and the maximum distance between any two pairs of nodes (called the diameter) is also small;<br/><br/></content></td>
+        </tr>
+        <tr>
+          <td align="right" valign="top"><content><strong>(2)</strong></content></td>
+          <td>&nbsp;</td>
+          <td valign="top"><content>Clustering is higher than purely random, meaning that all networks have patches of dense connections;<br/><br/></content></td>
+        </tr>
+        <tr>
+          <td align="right" valign="top"><content><strong>(3)</strong></content></td>
+          <td>&nbsp;</td>
+          <td valign="top"><content>Distribution of degrees of the nodes in a network exhibits fat tails, so there are more nodes with relatively high and low degrees and fewer nodes with medium degrees;<br/><br/></content></td>
+        </tr>
+        <tr>
+          <td align="right" valign="top"><content><strong>(4)</strong></content></td>
+          <td>&nbsp;</td>
+          <td valign="top"><content>The degrees of linked nodes tend to be positively correlated, so that higher degree nodes are more likely to be linked to other higher degree nodes, and lower degree nodes are more likely to be linked to other lower degree nodes;<br/><br/></content></td>
+        </tr>
+        <tr>
+          <td align="right" valign="top"><content><strong>(5)</strong></content></td>
+          <td>&nbsp;</td>
+          <td valign="top"><content>The clustering among the neighbors of a given node is inversely related to the node’s degree.<br/><br/></content></td>
+        </tr>
+      </table>
+
+     <br/>
+       <content>Due to these common properties we will find that there exists a few nodes that are more connected than others; that it does not take long to get from one node to any other node in the network; and that there will exists pockets of highly clustered nodes, i.e., cliques. These properties suggest that there must exist some nodes that are more important than others in terms of their connectivity and coverage in the network and also that any contagious process beginning from a single node (or set of nodes) can affect the entire network extremely quickly. <br/><br/>
+         
+         The first common centrality measure used, and the one that PageRank really built upon, was the Bonacich centrality measure which translates the network as an adjacency matrix, then takes the largest Eigenvalue of the matrix and assigns relative scores to all nodes based on the size of each nodes Eigenvalue. The outcome of this measure means that nodes that have important nodes linked to them will also be important themselves, and their importance increases with the number of nodes that link to the node.<br/><br/>
+         
+         Formally, the Bonancich centrality of some node <img src="imgs/i.gif" alt="i">, denoted by &nbsp;<img src="imgs/yi.gif" alt="yi">, can be expressed as</content><br/><br/>
+     <p>&nbsp;
+     <img src="imgs/bonacich.gif" alt="bonacich" width="160" height="60">
+     &nbsp;</p><br/><br/>
+	<content> Where the adjacency matrix of the network is denoted by <b>G</b> and the largest eigenvalue of the matrix is denoted by <img src="imgs/kappa.gif" alt="kappa">. From the formula it's pretty easy to see that the Bonacich centrality of some node <img src="imgs/i.gif" alt="i"> is dependent on the other nodes <img src="imgs/j.gif" alt="j"> that connect, or 'point', to it.</content><br/><br/><br/>
+      
+      
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%" rowspan="2" align="center" valign="bottom"><img src="imgs/black.gif" width="3" height="100%" alt="black"></td>
+    <td width="90%"><content><b>Example.</b> Imagine that we were mapping the Twitter network of 'follower--following' relationships. We assume that all poeple and organisations are represented as a set of nodes and there exists an arc (a pointed arrow) from one node (Owen) to another (Tom) if Owen follows Tom. Indeed, if Owen follows Tom then Owen <em>points to</em> Tom.<br/>
+    Let's first assume that Owen follows (points to) Tom where Owen has very few followers and his followers also have very few followers; then Owen following Tom will not increase Tom's Bonacich centrality by very much since Owen is not important (does not have a high centrality) himself. Conversely, if Owen has a lot of followers and they also have a lot of followers then Owen following Tom will increase Toms centrality by a significant amount.<br/><br/><br/></content></td>
+    <td width="5%" rowspan="2"align="center" valign="bottom"><img src="imgs/black.gif" width="3" height="100%" alt="black"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="imgs/owen-tom.gif"><br/><br/></td>
+    </tr>
+      </table>
+              
+	<br/><br/><content>Bonacich centrality therefore prioritises nodes that have many nodes pointing to them, which also have many nodes pointing to <em>them</em>, and so on. Therefore, each node is ranked depending on how many ways each node can be reached --- the more the better.<br/><br/>
+
+	An evolution of the Bonacich centrality measure is the Katz centrality which measures all nodes that can be connected through a path, and contributions to distant nodes are penalised.</content><br/><br/>
+     <p>&nbsp;
+     <img src="imgs/katz.gif" alt="bonacich" width="172" height="55">
+     &nbsp;</p><br/><br/>
+	
+	<content>Where <img src="imgs/alpha.gif" alt="alpha"> is some positive parameter (above 0) that con be freely chosen. 
+
+	The PageRank measure then is an extension of both the Bonacich and Katz centrality measures. It simply applies a scaling factor to the Katz centrality. Specifically, the scaling factor that is derived from each nodes' neighbours is proportional to their centrality divided by the number of nodes pointing to them. Then nodes that point to many others pass only a small amount of centrality on to each of those others, even if their own centrality is high.<br/><br/>
+    
+    PageRank is a calculation applied to nodes (or webpages) in a network that measures a nodes' importance based on the relative importance of all other nodes that point (connect) to it, which is then scaled down by a factor depending on how many other nodes each node points to. In mathematical terms, the PageRank of some node &nbsp;<img src="imgs/i.gif">, denoted by &nbsp;<img src="imgs/pri.gif">, is defined by:</content><br/><br/>
+     <p>&nbsp;
+     <img src="imgs/pagerank.gif" alt="bonacich" width="216" height="62">
+     &nbsp;</p><br/><br/>
+
+	<content>Where &nbsp;<img src="imgs/ni.gif">&nbsp; refers to the set of neighbours of <img src="imgs/i.gif" alt="i"> in the network &nbsp;<img src="imgs/g.gif">&nbsp; and we define &nbsp;<img src="imgs/d'.gif">&nbsp; as &nbsp; <img src="imgs/min.gif" width="143" height="16">.<br/><br/> 
+	
+	It is directly based on the Bonacich and Katz measures (although Brin and Page do not even acknowledge these measures in their papers). It's not the most novel measure of centrality, but regardless, from the success of Google we can conclude that this is a pretty effective measure for ranking the importance of webpages.<br/><br/>
+
+	So, what has this got to do with financial crises?</content><br/><br/><br/><br/>
+    
+    <subsection>The connected nature of finance</subsection><br/><br/>
+    
+    <content>We all know what banks are. They provide one of the most vital roles in society. We deposit our savings into them and they use these deposits to invest in entrepreneurial activities, business projects, mortgages, and other types of investment. The return on these investments leads to bank profit and provides interest on depositors money. They are the intermediaries between people that have excess money and people that want money. Simplifying somewhat, if the value of a banks assets (investments) are greater than its liabilities (the claims on it by others) then the bank becomes insolvent and extremely vulnerable to bank runs.<br/><br/>
+
+	In order to honour all of its claims by depositors and continue lending to clients banks lend to each other. Sometimes banks have a level of claims on them that their current working capital cannot maintain, meaning that they have to borrow money from other institutions for varying periods of time and at a rate of interest determined by the prevailing LIBOR (London Inter-Bank Offered Rate), which is just the rate of interest at which banks lend between themselves.<br/><br/>
+
+	Banks are therefore connected in a network in two ways. First, if a set of banks are invested in a given project or a given industry then they are connected <em>indirectly</em> through some form of overlapping portfolio. Second, one bank is <em>directly</em> connected to another if the bank lends money to the other. Specifically we could project these relationships as a directed network, much like we did with the WWW above.<br/><br/>
+
+	If some bank, <img src="imgs/i.gif" alt="i">, lends to another, <img src="imgs/j.gif" alt="j">, then bank <img src="imgs/i.gif" alt="i"> points to bank <img src="imgs/j.gif" alt="j">. The arcs in this network denote the flow of money from one bank (node) to another bank (node). Specifically, if there exists an arc from <img src="imgs/i.gif" alt="i"> to <img src="imgs/j.gif" alt="j"> then <img src="imgs/j.gif" alt="j"> is in debt to <img src="imgs/i.gif" alt="i">.<br/><br/>
+
+	Let's assume that some bank borrows a lot of money from another under the belief that the borrowing bank will repay the other the principal plus some interest at the rate of LIBOR. If the borrowing bank cannot repay the loan and defaults then the lending bank may become insolvent and unable to repay its liabilities to depositors and other financial institutions it borrowed from, etc. The default from one institution can cascade onto others when they are linked in a network: the failure of one bank or one investment can roll over onto others both directly and indirectly connected to it.<br/><br/>
+
+	The transmission of financial crises therefore moves in the opposite direction of the arcs meaning that the node / financial intermediary with the largest impact on the stability of the network should be the node with the largest number of other nodes pointing to it. This is exactly how webpages are ranked by Google's PageRank: the more points the better.<br/><br/>
+
+	A network can be a natural way to express both the WWW and the financial system. Further still, both can be represented as a directed network where one uses hyperlinks and the other uses loans to characterise the arcs. So can we use the same technique to highlight important financial institutions and banks as PageRank does to highlight important webpages?<br/><br/>
+
+	From the description above we should find that the financial institutions which have more nodes pointing to it, i.e. more banks borrowing from it, should be those that are more crucial to the stability to the financial system as a whole. If a financial institution with a large number of other financial institutions lending to it were to fail then it would trigger a larger cascade of failure than the failure of a financial institution that borrows from only a single other node.<br/><br/>
+
+	In the most superficial way PageRank seems like a great measure for the importance of financial intermediaries: it gives a higher importance to nodes that have a larger number of other node pointing to it.</content><br/><br/><br/><br/>
+
+	<subsection>The problems of PageRank</subsection><br/><br/>
+
+	<content>Some commentators have concluded that PageRank, or the newly known <a href="http://www.sg.ethz.ch/media/publication_files/debtrank.pdf" target="new">DebtRank</a>, measure is the panacea to all future financial contagions... However, this might not exactly be the case. Although both the financial system and the WWW can be projected as networks, the context of these networks is different, even in the most general sense. I highligh two main complications here.</content><br/><br/>
+
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="7%" align="right" valign="top"><content><strong>(1)</strong></content></td>
+          <td width="3%">&nbsp;</td>
+          <td width="90%" valign="top"><content>Nodes in a financial network have values attached to them that represent their assets and liabilities. A contagious process will only continue cascading in a financial network when the value of a nodes' liabilities exceeds the value of the nodes assets. Indeed, contagion is not necessarily automatic. And it could be that a bank that diversifies its borrowing, and therefore has a large number of other banks pointing towards to, could in actuality have less of an impact rather than more of an impact as PageRank would suggest!<br/><br/></content></td>
+        </tr>
+        <tr>
+          <td align="right" valign="top"><content><strong>(2)</strong></content></td>
+          <td>&nbsp;</td>
+          <td valign="top"><content>PageRank was never created to measure dynamics on networks and assumes that the network remains static through time. However, as nodes fail they are effectively removed from the network and the PageRank of the nodes in the reduced network may become different. Moreover, with PageRank we cannot attach probabilities of failure to nodes and use a reduced network based on these probabilities.</content></td>
+        </tr>
+      </table>
+
+	<br/><content>Due to these problems, using PageRank to rank the importance of financial institutions and bailing out banks depending on their PageRank score could actually be detrimental to saving the financial system.<br/><br/>
+
+	Despite PageRank being imperfect for assessing which financial institutions are most critical for the functioning of the financil system all is not lost. PageRank actually seems to be a pretty good basis in which to begin assessing the impact of banks when they suffer defaults and failure.</content><br/><br/><br/><br/>
+
+	<subsection>More in Part 2...</subsection>
+	<br/>
+	<br/>
+
+	<content>In Part 2 I will expand on the PageRank measure and provide an alteration that can be used for efficient vaccination of distressed financial institutions. This is an elaboration of PageRank but applied directly to financial institutions.<br/><br/> 
+
+	Maybe Google can save the world after all... with a little help!</content></td>
+    </tr>
+    </table>          
+	<p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+</div>
+
+
+
+
+  
+</div>
+
+
+
+
+</body>
+</html>

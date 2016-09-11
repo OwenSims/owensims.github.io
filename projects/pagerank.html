@@ -10,9 +10,9 @@
 	<meta name="Resource-type" content="Document" />
 
 
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="../js/fullpage/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="../css/examples.css" />
 	<style>
 
 	/* Style for our header texts
@@ -148,13 +148,13 @@
 	* --------------------------------------- */
 	#section0{
 		color: #000;
-		background-image: url(imgs/wall.jpg);
+		background-image: url(../imgs/wall.jpg);
 		background-position:center bottom;
 		padding: 0% 0 0 0;
 	}
 	
 	#section1{
-		background-image:url(imgs/tile-bkg.png);
+		background-image:url(../imgs/tile-bkg.png);
 		padding: 0% 0 0 0;
 	}
 
@@ -223,13 +223,13 @@
 		</script>
 	<![endif]-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="../js/vendors/jquery-1.8.3.min.js"></script>
+	<script src="../js/vendors/jquery-1.9.1.min.js"></script>
 
-	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="../js/vendors/jquery.slimscroll.min.js"></script>
 
-	<script type="text/javascript" src="fullpage/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript" src="../js/fullpage/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="../js/fullpage/examples.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -244,19 +244,14 @@
 <body>
 
 
-
-
-<div id="header"><a href="index.html"><img src="imgs/imowensims2.png" align="center"></a></div>
-
-
-
+<div id="header"><a href="../index.html"><img src="../imgs/imowensims2.png" align="center"></a></div>
 
 
 <div id="fullpage">
   <div class="section" id="section0">
 		<div class="intro">
         <p4><span style="background-color: #35A9E1">&nbsp;Project IV :&nbsp;</span></p4>
-        <h2><span style="background-color: #35A9E1">&nbsp;Google and Financial Crises&nbsp;<br/>&nbsp;(Part 1)&nbsp;</span></h2><br/><br/><br/><a href="index.html#projects"><img src="imgs/projects.gif" width="151" height="32" id="backtoprojects" /></a>
+        <h2><span style="background-color: #35A9E1">&nbsp;Google and Financial Crises&nbsp;<br/>&nbsp;(Part 1)&nbsp;</span></h2><br/><br/><br/><a href="../index.html#projects"><img src="../imgs/projects.gif" width="151" height="32" id="backtoprojects" /></a>
 			</div>
 	</div>
     
@@ -297,7 +292,7 @@
 	
     In network terms it is a measure of "<a href="http://en.wikipedia.org/wiki/Centrality" target="new">centrality</a>". The centrality of a node in a network is a measure that indicates the importance of a node in terms of some characteristic, which is typically associated with the nodes' degree (how many arcs or links it has in the network). There are a host of different centrality measures that make use of different characteristics. The most famous is PageRank developed by Sergey Brin and Larry Page (founders of Google Inc.), even though it is basically just the same as many others including the <a href="http://www.sciencedirect.com/science/article/pii/S0378873300000198" target="new">beta--measure</a> developed by Gilles and Van den Brink who completely axiomatised the measure.<br/><br/>
         
-    In its simplest form, the Wolrd Wide Web (WWW) can be projected as a directed network: webpages are represented as nodes and there is an arc from one node, <img src="imgs/i.gif" alt="i">, to another, <img src="imgs/j.gif" alt="j">, if there exists a hyperlink from page <img src="imgs/i.gif" alt="i"> to page <img src="imgs/j.gif" alt="j">. When the WWW is projected in this way centrality measures are used by search engines to rank websites and provide more accurate search results, irrespective of the contextual nature of the search string.<br/><br/>
+    In its simplest form, the Wolrd Wide Web (WWW) can be projected as a directed network: webpages are represented as nodes and there is an arc from one node, <img src="../imgs/i.gif" alt="i">, to another, <img src="../imgs/j.gif" alt="j">, if there exists a hyperlink from page <img src="../imgs/i.gif" alt="i"> to page <img src="../imgs/j.gif" alt="j">. When the WWW is projected in this way centrality measures are used by search engines to rank websites and provide more accurate search results, irrespective of the contextual nature of the search string.<br/><br/>
 		
 	Moreover, the structure of the WWW shares the same properties as many other networks, such as social networks, neural networks, e--mail and messaging conversations, protein, metabolic, and cancer cells, and economic / financial networks, which is very useful for this article! Indeed, it seems that the stucture (or topology) of all complex systems evolve a number of distinct properties:</content><br/><br/>
    
@@ -334,22 +329,22 @@
          
          The first common centrality measure used, and the one that PageRank really built upon, was the Bonacich centrality measure which translates the network as an adjacency matrix, then takes the largest Eigenvalue of the matrix and assigns relative scores to all nodes based on the size of each nodes Eigenvalue. The outcome of this measure means that nodes that have important nodes linked to them will also be important themselves, and their importance increases with the number of nodes that link to the node.<br/><br/>
          
-         Formally, the Bonancich centrality of some node <img src="imgs/i.gif" alt="i">, denoted by &nbsp;<img src="imgs/yi.gif" alt="yi">, can be expressed as</content><br/><br/>
+         Formally, the Bonancich centrality of some node <img src="../imgs/i.gif" alt="i">, denoted by &nbsp;<img src="../imgs/yi.gif" alt="yi">, can be expressed as</content><br/><br/>
      <p>&nbsp;
-     <img src="imgs/bonacich.gif" alt="bonacich" width="160" height="60">
+     <img src="../imgs/bonacich.gif" alt="bonacich" width="160" height="60">
      &nbsp;</p><br/><br/>
-	<content> Where the adjacency matrix of the network is denoted by <b>G</b> and the largest eigenvalue of the matrix is denoted by <img src="imgs/kappa.gif" alt="kappa">. From the formula it's pretty easy to see that the Bonacich centrality of some node <img src="imgs/i.gif" alt="i"> is dependent on the other nodes <img src="imgs/j.gif" alt="j"> that connect, or 'point', to it.</content><br/><br/><br/>
+	<content> Where the adjacency matrix of the network is denoted by <b>G</b> and the largest eigenvalue of the matrix is denoted by <img src="../imgs/kappa.gif" alt="kappa">. From the formula it's pretty easy to see that the Bonacich centrality of some node <img src="../imgs/i.gif" alt="i"> is dependent on the other nodes <img src="../imgs/j.gif" alt="j"> that connect, or 'point', to it.</content><br/><br/><br/>
       
       
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td width="5%" rowspan="2" align="center" valign="bottom"><img src="imgs/black.gif" width="3" height="100%" alt="black"></td>
+    <td width="5%" rowspan="2" align="center" valign="bottom"><img src="../imgs/black.gif" width="3" height="100%" alt="black"></td>
     <td width="90%"><content><b>Example.</b> Imagine that we were mapping the Twitter network of 'follower--following' relationships. We assume that all poeple and organisations are represented as a set of nodes and there exists an arc (a pointed arrow) from one node (Owen) to another (Tom) if Owen follows Tom. Indeed, if Owen follows Tom then Owen <em>points to</em> Tom.<br/>
     Let's first assume that Owen follows (points to) Tom where Owen has very few followers and his followers also have very few followers; then Owen following Tom will not increase Tom's Bonacich centrality by very much since Owen is not important (does not have a high centrality) himself. Conversely, if Owen has a lot of followers and they also have a lot of followers then Owen following Tom will increase Toms centrality by a significant amount.<br/><br/><br/></content></td>
-    <td width="5%" rowspan="2"align="center" valign="bottom"><img src="imgs/black.gif" width="3" height="100%" alt="black"></td>
+    <td width="5%" rowspan="2"align="center" valign="bottom"><img src="../imgs/black.gif" width="3" height="100%" alt="black"></td>
   </tr>
   <tr>
-    <td align="center"><img src="imgs/owen-tom.gif"><br/><br/></td>
+    <td align="center"><img src="../imgs/owen-tom.gif"><br/><br/></td>
     </tr>
       </table>
               
@@ -357,19 +352,19 @@
 
 	An evolution of the Bonacich centrality measure is the Katz centrality which measures all nodes that can be connected through a path, and contributions to distant nodes are penalised.</content><br/><br/>
      <p>&nbsp;
-     <img src="imgs/katz.gif" alt="bonacich" width="172" height="55">
+     <img src="../imgs/katz.gif" alt="bonacich" width="172" height="55">
      &nbsp;</p><br/><br/>
 	
-	<content>Where <img src="imgs/alpha.gif" alt="alpha"> is some positive parameter (above 0) that con be freely chosen. 
+	<content>Where <img src="../imgs/alpha.gif" alt="alpha"> is some positive parameter (above 0) that con be freely chosen. 
 
 	The PageRank measure then is an extension of both the Bonacich and Katz centrality measures. It simply applies a scaling factor to the Katz centrality. Specifically, the scaling factor that is derived from each nodes' neighbours is proportional to their centrality divided by the number of nodes pointing to them. Then nodes that point to many others pass only a small amount of centrality on to each of those others, even if their own centrality is high.<br/><br/>
     
-    PageRank is a calculation applied to nodes (or webpages) in a network that measures a nodes' importance based on the relative importance of all other nodes that point (connect) to it, which is then scaled down by a factor depending on how many other nodes each node points to. In mathematical terms, the PageRank of some node &nbsp;<img src="imgs/i.gif">, denoted by &nbsp;<img src="imgs/pri.gif">, is defined by:</content><br/><br/>
+    PageRank is a calculation applied to nodes (or webpages) in a network that measures a nodes' importance based on the relative importance of all other nodes that point (connect) to it, which is then scaled down by a factor depending on how many other nodes each node points to. In mathematical terms, the PageRank of some node &nbsp;<img src="../imgs/i.gif">, denoted by &nbsp;<img src="../imgs/pri.gif">, is defined by:</content><br/><br/>
      <p>&nbsp;
-     <img src="imgs/pagerank.gif" alt="bonacich" width="216" height="62">
+     <img src="../imgs/pagerank.gif" alt="bonacich" width="216" height="62">
      &nbsp;</p><br/><br/>
 
-	<content>Where &nbsp;<img src="imgs/ni.gif">&nbsp; refers to the set of neighbours of <img src="imgs/i.gif" alt="i"> in the network &nbsp;<img src="imgs/g.gif">&nbsp; and we define &nbsp;<img src="imgs/d'.gif">&nbsp; as &nbsp; <img src="imgs/min.gif" width="143" height="16">.<br/><br/> 
+	<content>Where &nbsp;<img src="../imgs/ni.gif">&nbsp; refers to the set of neighbours of <img src="../imgs/i.gif" alt="i"> in the network &nbsp;<img src="../imgs/g.gif">&nbsp; and we define &nbsp;<img src="../imgs/d'.gif">&nbsp; as &nbsp; <img src="../imgs/min.gif" width="143" height="16">.<br/><br/> 
 	
 	It is directly based on the Bonacich and Katz measures (although Brin and Page do not even acknowledge these measures in their papers). It's not the most novel measure of centrality, but regardless, from the success of Google we can conclude that this is a pretty effective measure for ranking the importance of webpages.<br/><br/>
 
@@ -383,7 +378,7 @@
 
 	Banks are therefore connected in a network in two ways. First, if a set of banks are invested in a given project or a given industry then they are connected <em>indirectly</em> through some form of overlapping portfolio. Second, one bank is <em>directly</em> connected to another if the bank lends money to the other. Specifically we could project these relationships as a directed network, much like we did with the WWW above.<br/><br/>
 
-	If some bank, <img src="imgs/i.gif" alt="i">, lends to another, <img src="imgs/j.gif" alt="j">, then bank <img src="imgs/i.gif" alt="i"> points to bank <img src="imgs/j.gif" alt="j">. The arcs in this network denote the flow of money from one bank (node) to another bank (node). Specifically, if there exists an arc from <img src="imgs/i.gif" alt="i"> to <img src="imgs/j.gif" alt="j"> then <img src="imgs/j.gif" alt="j"> is in debt to <img src="imgs/i.gif" alt="i">.<br/><br/>
+	If some bank, <img src="../imgs/i.gif" alt="i">, lends to another, <img src="../imgs/j.gif" alt="j">, then bank <img src="../imgs/i.gif" alt="i"> points to bank <img src="../imgs/j.gif" alt="j">. The arcs in this network denote the flow of money from one bank (node) to another bank (node). Specifically, if there exists an arc from <img src="../imgs/i.gif" alt="i"> to <img src="../imgs/j.gif" alt="j"> then <img src="../imgs/j.gif" alt="j"> is in debt to <img src="../imgs/i.gif" alt="i">.<br/><br/>
 
 	Let's assume that some bank borrows a lot of money from another under the belief that the borrowing bank will repay the other the principal plus some interest at the rate of LIBOR. If the borrowing bank cannot repay the loan and defaults then the lending bank may become insolvent and unable to repay its liabilities to depositors and other financial institutions it borrowed from, etc. The default from one institution can cascade onto others when they are linked in a network: the failure of one bank or one investment can roll over onto others both directly and indirectly connected to it.<br/><br/>
 

@@ -10,9 +10,9 @@
 	<meta name="Resource-type" content="Document" />
 
 
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="../js/fullpage/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="../css/examples.css" />
 	<style>
 
 	/* Style for our header texts
@@ -149,13 +149,13 @@
 	#section0{
 		vertical-align: top;
 		color: #000;
-		background-image: url(imgs/ted.jpg);
+		background-image: url(../imgs/ted.jpg);
 		background-position:center bottom;
 		padding: 0% 0 0 0;
 	}
 	
 	#section1{
-		background-image:url(imgs/tile-bkg.png);
+		background-image:url(../imgs/tile-bkg.png);
 		padding: 0% 0 0 0;
 	}
 
@@ -224,65 +224,36 @@
 		</script>
 	<![endif]-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="../js/vendors/jquery-1.8.3.min.js"></script>
+	<script src="../js/vendors/jquery-1.9.1.min.js"></script>
 
-	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="../js/vendors/jquery.slimscroll.min.js"></script>
 
-	<script type="text/javascript" src="fullpage/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript" src="../js/fullpage/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="../js/fullpage/examples.js"></script>
 
 	<script type="text/javascript">
-$(document).ready(function() {
+		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				menu: '#menu',
 				autoScrolling: false
 			});
 		});
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-    </script>
+	</script>
 
 </head>
-<body onLoad="MM_preloadImages('imgs/Slides.jpg','imgs/Script.jpg')">
+<body>
 
-
-
-
-<div id="header"><a href="index.html"><img src="imgs/imowensims2.png" align="center"></a></div>
-
-
-
+<div id="header"><a href="../index.html"><img src="../imgs/imowensims2.png" align="center"></a></div>
 
 
 <div id="fullpage">
   <div class="section" id="section0">
 		<div class="intro">
         <p4><span style="background-color: #35A9E1">&nbsp;Project V :&nbsp;</span></p4>
-        <h2><span style="background-color: #35A9E1">&nbsp;Banking 2.No!&nbsp;</span></h2><br/><br/><br/><a href="index.html#projects"><img src="imgs/projects.gif" width="151" height="32" id="backtoprojects" /></a>
+        <h2><span style="background-color: #35A9E1">&nbsp;Banking 2.No!&nbsp;</span></h2><br/><br/><br/><a href="../index.html#projects"><img src="../imgs/projects.gif" width="151" height="32" id="backtoprojects" /></a>
 			</div>
 	</div>
-    
-    
 
 
   <div class="section" id="section1">
@@ -314,8 +285,8 @@ function MM_swapImage() { //v3.0
 
               	<table align="center" width="80%" border="0" cellspacing="0" cellpadding="0">
                 	<tr>
-               			<td width="50%" align="center"><a href="projects/TEDx/BankingTEDx (Presentation).pdf" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('slides','','imgs/Slides.jpg',1)"><img src="imgs/TEDxSlides.jpg" width="290" height="218" id="slides"></a></td>
-                		<td width="50%" align="center"><a href="projects/TEDx/script.pdf" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('script','','imgs/Script.jpg',1)"><img src="imgs/TEDxScript.jpg" width="290" height="218" id="script"></a></td>
+               			<td width="50%" align="center"><a href="../projects/TEDx/BankingTEDx (Presentation).pdf" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('slides','','../imgs/Slides.jpg',1)"><img src="../imgs/TEDxSlides.jpg" width="290" height="218" id="slides"></a></td>
+                		<td width="50%" align="center"><a href="../projects/TEDx/script.pdf" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('script','','../imgs/Script.jpg',1)"><img src="../imgs/TEDxScript.jpg" width="290" height="218" id="script"></a></td>
                 	</tr>
               	</table>
 
